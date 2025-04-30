@@ -81,20 +81,26 @@ Spróbuj zamknąć inne programy, które mogą obciążać komputer, np. przegl�
 
 To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 
-## Problem z VPN, proxy (HTTP code 500)
+## Problem z VPN, proxy (HTTP code 401, 500)
 **Problem:** Docker nie może połączyć z serwerem `docker.io`
 
 **Rozwiązanie:**
 
-1. Zamknij Docker Desktop i zrestartuj komputer.
+1. Wyloguj się z Docker Desktop. W tym celu kliknij w swój awatar w prawym górnym rogu [1], a następnie kliknij `Sign out` [2]:
 
-2. Jeśli to nie pomoże, to otwórz terminal w Docker Desktop: 
+    ![](./assets/docker_desktop_logout.png)
+
+2. Zamknij program, otwórz go i zaloguj się jeszcze raz.
+
+3. Jeśli to nie pomoże, to zamknij Docker Desktop i zrestartuj komputer.
+
+4. Jeśli nadal jest problem, to otwórz terminal w Docker Desktop: 
 
     ![](./assets/docker_desktop_vpn_1.png)
 
     ![](./assets/docker_desktop_vpn_2.png)
 
-3. Wpisz i uruchom kolejno takie komendy:
+5. Wpisz i uruchom kolejno takie komendy:
 
     ```bash
     netsh int ip reset
@@ -102,7 +108,7 @@ To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
     netsh winhttp reset proxy
     ```
 
-4. Po wykonaniu tych komend należy ponownie **zrestartować komputer** aby zmiany ustawień zostały prawidłowo zastosowane.
+6. Po wykonaniu tych komend należy ponownie **zrestartować komputer** aby zmiany ustawień zostały prawidłowo zastosowane.
 
 ## Konflikt z programem antywirusowym lub zaporą
 **Problem:** Instalacja zatrzymuje się lub Docker nie startuje.
