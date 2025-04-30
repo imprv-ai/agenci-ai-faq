@@ -1,0 +1,26 @@
+# Project information
+site_name: FAQ
+site_url: https://imprv-ai.github.io/agenci-ai-faq/
+site_author: IMPRV.ai dev team and supporters
+site_description: >-
+  Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które
+  napotykają uczestnicy kursu `Agenci AI`.
+
+# Repository
+repo_name: imprv-ai/agenci-ai-faq
+repo_url: https://github.com/imprv-ai/agenci-ai-faq
+
+# Configuration
+theme:
+  name: material
+
+plugins:
+  - tags
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
