@@ -80,10 +80,7 @@ Jeśli w trakcie przechodzenia kursu, wystąpi u Ciebie problem i nie znajdziesz
 
 Link do naszego kanału znajduje się na stronie głównej kursu **Agenci AI:**
 
-!!!! VVVVVVVVVVVVVV !!!!
-
-[Link do strony](https://edu.gotoit.pl/index.php/pracuj-w-ai-data-science/)
-![](./assets/getting_started__report_a_problem_open_the_discord.png)
+[Link do strony](https://edu.gotoit.pl/index.php/tworz-i-sprzedawaj-agentow-ai-od-zera/)
 
 Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń i pomocy między kursantami i mentorami, postępuj zgodnie z poniższymi krokami:
 
@@ -97,31 +94,6 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 3. Opisz jak najwięcej informacji o Twoim problemie
 4. Zamieść jeden lub więcej screenów, żeby pokazać szczegóły Twojego problemu.
 
-    **Początek błędu:**
-
-    ![](./assets/getting_started__report_a_problem_screen_1_new.png)
-
-    **Koniec błędu:**
-
-    ![](./assets/getting_started__report_a_problem_screen_2_new.png)
-
-    **Widok na okno Discorda:**
-
-    ![](./assets/getting_started__report_a_problem_discord_channels_new.png)
-
-    **Przykład zgłoszenia problemu z modułu 5:**
-
-    ![](./assets/getting_started__report_a_problem_send_a_message_new.png)
-
-    Tak wygląda wiadomość przed wysłaniem. Możesz jeszcze zmienić załączone pliki, usunąć, dodać. **Naciśnij Enter aby wysłać.**
-
-    ![](./assets/getting_started__report_a_problem_message.png)
-
-    **Tak wygląda wysłana wiadomość:**
-
-    ![](./assets/getting_started__report_a_problem_message_2.png)
-
-    **Czekaj na odpowiedź.**
 
 ## **Tip 3. Jak spakować pliki do ZIP-a?**
 
