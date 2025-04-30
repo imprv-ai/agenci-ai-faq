@@ -12,6 +12,20 @@ tags:
     - FAQ
 ---
 
+# **Jak zacząć pracę z kursem?**
+
+Witajcie w przewodniku, który pomoże Wam rozpocząć przygodę z kursem. Znajdziecie tu praktyczne wskazówki i instrukcje.
+
+Kurs dzieli się na 14 modułów, które zawierają w sobie pojedyncze lekcje.
+
+!!! info "Gdzie szukać pomocy w razie problemu?"
+
+    W przypadku wystąpienia jakichkolwiek trudności, stworzyliśmy i stale aktualizujemy dla Was sekcję
+
+    **[FAQ - zbiór najczęściej zadawanych pytań](/agenci-ai-faq/#pytania-odpowiedzi)**
+
+    Znajdziecie tam przykłady problemów wraz z wytłumaczeniem i dokładną instrukcją postępowania.
+
 ## **Tip 1. Jak zrobić screena?**
 
 Screen - elektroniczny zapis, zrzut obrazu aktualnie wyświetlanego na ekranie komputera. To tak jakby zrobić zdjęcie tego co widzimy na naszym komputerze/monitorze. Screen można zapisać jako plik, można go do kogoś przesłać, coś na nim zaznaczyć, narysować.
