@@ -90,7 +90,7 @@ To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 
     ![](./assets/docker_desktop_logout.png)
 
-2. Zamknij program, otwórz go i zaloguj się jeszcze raz.
+2. Zamknij program Docker Desktop, otwórz go i zaloguj się jeszcze raz.
 
 3. Jeśli to nie pomoże, to zamknij Docker Desktop i zrestartuj komputer.
 
