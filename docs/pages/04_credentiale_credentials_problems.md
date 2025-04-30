@@ -20,3 +20,14 @@ tags:
     <div class="video-wrapper">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/DT8ynTz9xuI?si=V1z3qWngLAfqNvYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+## **Node Google Sheet nie widzi listy dokumentów**
+
+1. Jeśli rozwijasz w polu **Document** listę **From List** i widzisz taki błąd
+   ![](assets/credentials__google__does_not_see_list_1.png)
+   **Oznacza to, że należy włączyć serwis Google Drive API** 
+1. Zaloguj się do google cloud platform [link](https://console.cloud.google.com/).
+1. Następnie podążaj za instrukcją z tego wideo
+    <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/O7QV6X8H1uk?si=QUOOzcxJxuKSwuky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
