@@ -10,3 +10,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 
 - [Instalacja Docker Desktop - FAQ](./pages/02_docker_desktop.md)
 - [OpenAI - klucz API, logowanie](./pages/03_open_ai.md)
+- [Credentiale Gmail nie działają](./pages/04_credentiale_credentials_problems.md)
