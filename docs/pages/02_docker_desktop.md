@@ -10,7 +10,9 @@ tags:
 # Instalacja Docker Desktop w Windows 10 i 11
 
 ## Co potrzebuję, żeby zainstalować Docker Desktop?
-Musisz mieć komputer z systemem Windows 10 lub 11. Ważne, żeby system był zaktualizowany – sprawdź to w ustawieniach w sekcji `Aktualizacje Windows`. Potrzebujesz też trochę miejsca na dysku (około 10 GB) i połączenia z internetem, żeby pobrać program.
+1. Komputer z systemem Windows 10 lub 11. Ważne, żeby system był zaktualizowany – sprawdź to w ustawieniach w sekcji `Aktualizacje Windows`. 
+2. Potrzebujesz też trochę miejsca na dysku (około 10 GB).
+3. Przeglądarka internetowa Chrome, Edge. U wielu użytkowników są problemy podczas używania Safari.
 
 ## Skąd pobrać Docker Desktop?
 Wejdź na oficjalną stronę Docker: ([www.docker.com](https://docker.com))  . Kliknij przycisk `Download Docker Desktop` – wybierz wersję dla Windows (najczęściej będzie to wersja AMD64). Plik się pobierze, a Ty musisz go potem otworzyć.
@@ -27,15 +29,16 @@ Sprawdź, czy pobrałeś cały plik – czasem internet przerywa i plik jest usz
 
 1. Otwórz PowerShell jako administrator
 
-        ![](./assets/docker_desktop__powershell.png)
+![](./assets/docker_desktop__powershell.png)
 
-2. Wpisz taką komendę i potwierdź je Enterem:
+2. Wpisz po kolei takie komendy potwierdzając je Enterem:  
 
    ```powershell
+   wsl --shutdown
    wsl --install -d Ubuntu-22.04
-   ```
+   ```  
 2. Zrestartuj komputer.
-To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam instalacji to należy go odinstalować i **zainstalować ponownie** od nowa (patrz punkt 6.).
+To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam instalacji to należy go odinstalować i **zainstalować ponownie** od nowa (patrz punkt **Instalacja się zawiesza**).
 
 ## Ustawienie w BIOS Intel Virtualization Technology (VMX)
 
@@ -43,7 +46,7 @@ To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam ins
 
 1. Wejdź do BIOS, podczas uruchamiania komputera naciskaj kilkukrotnie `F2` lub inny przycisk zależnie od producenta komputera
 
-        ![](./assets/docker_desktop__bios.png)
+![](./assets/docker_desktop__bios.png)
 
 2. Wybierz `Advanced`, następnie `CPU Configuration` lub `Configuration` w starszych komputerach, wyszukaj linijki `Intel Virtualization Technology (VMX)` i wybierz `Enabled`
 
@@ -54,17 +57,18 @@ Spróbuj zamknąć inne programy, które mogą obciążać komputer, np. przegl�
 
 1. Otwórz panel Aplikacje:
 
-        ![](./assets/docker_desktop__aplikacje.png)
+![](./assets/docker_desktop__aplikacje.png)
 
 2. Znajdź Docker Desktop, kliknij na `...` z prawej strony i wybierz `Odinstaluj`
 
-        ![](./assets/docker_desktop__odinstaluj.png)
+![](./assets/docker_desktop__odinstaluj.png)
 
 3. Zrestartuj komputer i zacznij proces instalacji od nowa.
 
 
 ## Wirtualizacja (Hyper-V/Windows Hypervisor Platform) jest wyłączona
 **Problem:** Docker nie może uruchomić maszyn wirtualnych.
+
 **Rozwiązanie:**
 
 1. Wyszukaj w menu Start "Włącz lub wyłącz funkcje systemu Windows".
@@ -78,6 +82,7 @@ To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 
 ## Konflikt z programem antywirusowym lub zaporą
 **Problem:** Instalacja zatrzymuje się lub Docker nie startuje.
+
 **Rozwiązanie:**
 
 1. Tymczasowo wyłącz oprogramowanie zabezpieczające (np. Windows Defender, Avast).
@@ -88,8 +93,9 @@ To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 ## Jak sprawdzić, czy Docker działa?
 Po instalacji zobaczysz ikonkę Docker (mały wieloryb) na pasku zadań, obok zegarka. Kliknij ją – jeśli się otwiera i nie pokazuje błędów, to wszystko jest w porządku!
 
-## 10. Docker Desktop nie uruchamia się po instalacji
+## Docker Desktop nie uruchamia się po instalacji
 **Problem:** Po zainstalowaniu nie pojawia się okno aplikacji.
+
 **Rozwiązanie:**
 
 1. Sprawdź w Menedżerze zadań `Ctrl + Alt + Del` wybierz `Procesy` w polu wyszukiwarki wpisz "docker" i sprwdź czy masz jakieś uruchomione procesy.
