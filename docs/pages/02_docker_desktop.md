@@ -29,15 +29,17 @@ Sprawdź, czy pobrałeś cały plik – czasem internet przerywa i plik jest usz
 
 1. Otwórz PowerShell jako administrator
 
-![](./assets/docker_desktop__powershell.png)
+    ![](./assets/docker_desktop__powershell.png)
 
 2. Wpisz po kolei takie komendy potwierdzając je Enterem:  
 
-   ```powershell
-   wsl --shutdown
-   wsl --install -d Ubuntu-22.04
-   ```  
-2. Zrestartuj komputer.
+    ```powershell
+    wsl --shutdown
+    wsl --install -d Ubuntu-22.04
+    ```
+
+3. Zrestartuj komputer.
+
 To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam instalacji to należy go odinstalować i **zainstalować ponownie** od nowa (patrz punkt **Instalacja się zawiesza**).
 
 ## Ustawienie w BIOS Intel Virtualization Technology (VMX)
@@ -46,7 +48,7 @@ To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam ins
 
 1. Wejdź do BIOS, podczas uruchamiania komputera naciskaj kilkukrotnie `F2` lub inny przycisk zależnie od producenta komputera
 
-![](./assets/docker_desktop__bios.png)
+    ![](./assets/docker_desktop__bios.png)
 
 2. Wybierz `Advanced`, następnie `CPU Configuration` lub `Configuration` w starszych komputerach, wyszukaj linijki `Intel Virtualization Technology (VMX)` i wybierz `Enabled`
 
@@ -57,11 +59,11 @@ Spróbuj zamknąć inne programy, które mogą obciążać komputer, np. przegl�
 
 1. Otwórz panel Aplikacje:
 
-![](./assets/docker_desktop__aplikacje.png)
+    ![](./assets/docker_desktop__aplikacje.png)
 
 2. Znajdź Docker Desktop, kliknij na `...` z prawej strony i wybierz `Odinstaluj`
 
-![](./assets/docker_desktop__odinstaluj.png)
+    ![](./assets/docker_desktop__odinstaluj.png)
 
 3. Zrestartuj komputer i zacznij proces instalacji od nowa.
 
