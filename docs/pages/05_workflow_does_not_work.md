@@ -9,7 +9,7 @@ tags:
 
 ## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje**
    ![](assets/workflows__local_files_example_1.png)
-1. Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo volumen do foldery `pliki_n8n`, a Local Files Trigger nie reaguje
+1. Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo volumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
 1. Kliknij dwukrotnie w node `Local File Trigger`
    ![](assets/workflows__local_files_example_2.png)
 1. Kliknij w `Add Option`
