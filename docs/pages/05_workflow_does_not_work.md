@@ -28,3 +28,6 @@ tags:
     <div class="video-wrapper">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/VNyzU-CtOAw?si=xKw39F_Wl0PNxz4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+1. Jeśli wciąż nie działa, **usuń kontener** i spróbuj ponownie.
+   ![](assets/workflows__delete_conteiner.png)
