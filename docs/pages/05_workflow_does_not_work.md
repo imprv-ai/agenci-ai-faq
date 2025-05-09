@@ -30,4 +30,4 @@ tags:
     </div>
 
 1. Jeśli wciąż nie działa, **usuń kontener** i spróbuj ponownie.
-   ![](assets/workflows__delete_conteiner.png)
+   ![](assets/workflows__delete_container.png)
