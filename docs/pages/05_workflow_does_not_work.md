@@ -35,12 +35,12 @@ tags:
 1. Po usunięciu kontenera przejdź do obrazów `Images` i uruchom obraz trójkątnym przyciskiem `Run`
    ![](assets/workflows__run_image.png)
 
-1. Pokaże się okno `Run a new conteiner`, rozwiń zakładkę `Optional settings` i wypełnij wszystkie pola zgodnie ze schematem:
+1. Pokaże się okno `Run a new container`, rozwiń zakładkę `Optional settings` i wypełnij wszystkie pola zgodnie ze schematem:
       - najpierw dodaj jako **pierwszy wolumen** ten który już istniał (pod tymi samymi ścieżkami co wcześniej)
       - jako **drugi wolumen** podepnij ten nowy folder na dodawnie plików
       ![](assets/workflows__directories.png)
 
-1. Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce `Conteiners` kliknij na nazwę kontenera, a następnie w zakładkę `Bind mounts`:
+1. Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce `Containers` kliknij na nazwę kontenera, a następnie w zakładkę `Bind mounts`:
    ![](assets/workflows__directories_1.png)
 1. Tutaj powinno być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
