@@ -9,7 +9,7 @@ tags:
 
 ## **Uruchamiam aplikację i ładuje się w nieskończoność**
 
-1. Po uruchomieniu aplikacji widzę czarny ekran z napisem Ładonwanie ( lub Loading ) i przez minutę nic się nie dzieje
+1. Po uruchomieniu aplikacji widzę czarny ekran z napisem Ładowanie ( lub Loading ) i przez minutę nic się nie dzieje
    
       ![](assets/imprv_app__login__1.png)
 
