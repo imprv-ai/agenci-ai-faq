@@ -14,3 +14,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Workflow nie działa](./pages/05_workflow_does_not_work.md)
 - [Problem z Telegramem](./pages/06_telegram_problems.md)
 - [Problem z app.imprv.ai](./pages/07_imprv_problems.md)
+- [Odzyskiwanie loginu i hasła do n8n](./pages/08_reset_password_n8n.md)
