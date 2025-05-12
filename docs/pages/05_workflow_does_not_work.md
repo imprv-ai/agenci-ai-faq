@@ -9,7 +9,7 @@ tags:
 
 ## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje**
 
-1. Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo volumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
+1. Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo wolumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
    ![](assets/workflows__local_files_example_1.png)
 
 1. Kliknij dwukrotnie w node `Local File Trigger`
@@ -36,11 +36,22 @@ tags:
    ![](assets/workflows__run_image.png)
 
 1. Pokaże się okno `Run a new container`, rozwiń zakładkę `Optional settings` i wypełnij wszystkie pola zgodnie ze schematem:
-      - najpierw dodaj jako **pierwszy wolumen** ten który już istniał (pod tymi samymi ścieżkami co wcześniej)
-      - jako **drugi wolumen** podepnij ten nowy folder na dodawnie plików
+      - najpierw dodaj jako **pierwszy wolumen** ten, który już istniał (pod tymi samymi ścieżkami co wcześniej)
+      - jako **drugi wolumen** podepnij ten nowy folder na dodawanie plików
       ![](assets/workflows__directories.png)
 
 1. Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce `Containers` kliknij na nazwę kontenera, a następnie w zakładkę `Bind mounts`:
    ![](assets/workflows__directories_1.png)
 1. Tutaj powinno być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
+
+## **Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie GMAIL**
+
+1. Klikam w node Gmail i nie widzę opcji, które pokazane były na lekcji
+   ![](assets/workflow_elzbieta__gmail_1.png)
+
+1. Żeby naprawić ten problem należy odznaczyć `Simplify` (tak żeby było nieaktywne i się nie świeciło na zielono)
+   ![](assets/workflow_elzbieta__gmail_2.png)
+
+1. Po deaktywacji `Simplify` będziemy mogli dodać opcje ( np. `Download attachments`)
+   ![](assets/workflow_elzbieta__gmail_3.png)
