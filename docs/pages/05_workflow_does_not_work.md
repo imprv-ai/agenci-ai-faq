@@ -24,12 +24,12 @@ tags:
 1. Kliknij w suwak tak, żeby się zaświecił na zielono
    ![](assets/workflows__local_files_example_5.png)
 
-1. Powtórz test przenosząc plik ze zdjęciem do folderu i teraz powinno działać
+1. Powtórz test, przenosząc plik ze zdjęciem do folderu, i teraz powinno działać
     <div class="video-wrapper">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/VNyzU-CtOAw?si=xKw39F_Wl0PNxz4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-1. Jeśli wciąż nie działa, **usuń kontener** i spróbuj ponownie uważając podczas **ustawiania katalogów**.
+1. Jeśli wciąż nie działa, **usuń kontener** i spróbuj ponownie, uważając podczas **ustawiania katalogów**.
    ![](assets/workflows__delete_container.png)
 
 1. Po usunięciu kontenera przejdź do obrazów `Images` i uruchom obraz trójkątnym przyciskiem `Run`
@@ -42,7 +42,7 @@ tags:
 
 1. Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce `Containers` kliknij na nazwę kontenera, a następnie w zakładkę `Bind mounts`:
    ![](assets/workflows__directories_1.png)
-1. Tutaj powinno być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
+1. Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
 
 ## **Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie GMAIL**
@@ -50,8 +50,16 @@ tags:
 1. Klikam w node Gmail i nie widzę opcji, które pokazane były na lekcji
    ![](assets/workflow_elzbieta__gmail_1.png)
 
-1. Żeby naprawić ten problem należy odznaczyć `Simplify` (tak żeby było nieaktywne i się nie świeciło na zielono)
+1. Żeby naprawić ten problem, należy odznaczyć `Simplify` (tak, żeby było nieaktywne i nie świeciło się na zielono)
    ![](assets/workflow_elzbieta__gmail_2.png)
 
-1. Po deaktywacji `Simplify` będziemy mogli dodać opcje ( np. `Download attachments`)
+1. Po deaktywacji `Simplify` będziemy mogli dodać opcje (np. `Download attachments`)
    ![](assets/workflow_elzbieta__gmail_3.png)
+
+## **Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie GMAIL po pobraniu danych**
+
+1. Po pobraniu testowego maila z załącznikami nie widzę zakładki `Binary` w sekcji `Output`
+   ![](assets/workflow_elzbieta__gmail_no_binary_1.png)
+
+1. Zakładka Binary widoczna jest jedynie w sytuacji, gdy pobrane zostaną pliki. Node nie pobierze plików, jeżeli nie zaznaczymy opcji `Download attachments`. Należy zatem zaznaczyć tę opcję i ponownie pobrać dane.
+   ![](assets/workflow_elzbieta__gmail_no_binary_2.png)
