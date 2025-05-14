@@ -21,7 +21,7 @@ tags:
 
 1. Należy ustawić zmienną środowiskową `WEBHOOK_URL` i jej wartość ustawić na domenę, którą mamy z `ngrok`
 
-   ### WAŻNE! : wartość którą wpisujemy powinna mieć postać `https://TWOJA_DOMENA_NGROK`
+   **WAŻNE!** : wartość którą wpisujemy powinna mieć postać `https://TWOJA_DOMENA_NGROK`
    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## **Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node SWITCH**
