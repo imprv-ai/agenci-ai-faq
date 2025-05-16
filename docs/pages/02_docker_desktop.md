@@ -15,7 +15,7 @@ tags:
 3. Przeglądarka internetowa Chrome, Edge. U wielu użytkowników są problemy podczas używania Safari.
 
 ## Skąd pobrać Docker Desktop?
-Wejdź na oficjalną stronę Docker: ([www.docker.com](https://docker.com))  . Kliknij przycisk `Download Docker Desktop` – wybierz wersję dla Windows (najczęściej będzie to wersja AMD64). Plik się pobierze, a Ty musisz go potem otworzyć.
+Wejdź na oficjalną stronę Docker: ([www.docker.com](https://docker.com)). Kliknij przycisk `Download Docker Desktop` – wybierz wersję dla Windows (najczęściej będzie to wersja AMD64). Plik się pobierze, a Ty musisz go potem otworzyć.
 
 ## Co zrobić, jeśli instalacja się nie zaczyna?
 Sprawdź, czy pobrałeś cały plik – czasem internet przerywa i plik jest uszkodzony. Jeśli nic się nie dzieje po kliknięciu, upewnij się, że masz uprawnienia administratora. Kliknij prawym przyciskiem myszy na plik instalacyjny i wybierz `Uruchom jako administrator`.
@@ -82,7 +82,7 @@ Spróbuj zamknąć inne programy, które mogą obciążać komputer, np. przegl�
 To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 
 ## Problem z VPN, proxy (HTTP code 401, 500)
-**Problem:** Docker nie może połączyć z serwerem `docker.io`
+**Problem:** Docker nie może połączyć się z serwerem `docker.io`
 
 **Rozwiązanie:**
 
@@ -128,14 +128,14 @@ Po instalacji zobaczysz ikonkę Docker (mały wieloryb) na pasku zadań, obok ze
 
 **Rozwiązanie:**
 
-1. Sprawdź w Menedżerze zadań `Ctrl + Alt + Del` wybierz `Procesy` w polu wyszukiwarki wpisz "docker" i sprwdź czy masz jakieś uruchomione procesy.
+1. Sprawdź w Menedżerze zadań `Ctrl + Alt + Del` wybierz `Procesy` w polu wyszukiwarki wpisz "docker" i sprawdź czy masz jakieś uruchomione procesy.
 
-2. Mogą tam być uruchomine `Docker Desktop` lub `com.docker.backend`.
+2. Mogą tam być uruchomione `Docker Desktop` lub `com.docker.backend`.
 
 3. Zamknij je klikając prawym klawiszem myszy i wybierając `Zamknij zadanie`.
 
 ## Jak sprawdzić ustawienia kontenera Docker Desktop
-**Zagadnienie**: Chcę sprawdzić ustawienia mojego kontenera takie jak `komenda` czy `zmienne środowisko`
+**Zagadnienie**: Chcę sprawdzić ustawienia mojego kontenera takie jak `komenda` czy `zmienne środowiskowe`
 
 **Rozwiązanie**
 
@@ -152,4 +152,4 @@ Po instalacji zobaczysz ikonkę Docker (mały wieloryb) na pasku zadań, obok ze
     ![](assets/workflow__docker_desktop__inspect_4.png)
 
 ## Każdy problem
-Naptkając jakikolwiek problem podczas instalacji lub działania Docker Desktop warto przestawić swój problem dla chata AI (Chat GPT, Cloude, Grok). Warto wtedy dodać, że nie jest się informatykiem i żeby odpowiedział prostym językiem, z opisaniem wszystkich potrzebnych kroków.
+Napotkając jakikolwiek problem podczas instalacji lub działania Docker Desktop warto przedstawić swój problem dla chata AI (Chat GPT, Claude, Grok). Warto wtedy dodać, że nie jest się informatykiem i żeby odpowiedział prostym językiem, z opisaniem wszystkich potrzebnych kroków.
