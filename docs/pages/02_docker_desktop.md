@@ -134,5 +134,22 @@ Po instalacji zobaczysz ikonkę Docker (mały wieloryb) na pasku zadań, obok ze
 
 3. Zamknij je klikając prawym klawiszem myszy i wybierając `Zamknij zadanie`.
 
+## Jak sprawdzić ustawienia kontenera Docker Desktop
+**Zagadnienie**: Chcę sprawdzić ustawienia mojego kontenera takie jak `komenda` czy `zmienne środowisko`
+
+**Rozwiązanie**
+
+1. W Docker Desktop wejdź w `Containers`, żeby zobaczyć uruchomione kontenery
+    ![](assets/workflow__docker_desktop__inspect_1.png)
+
+1. Kliknij w nazwę kontenera, który chcesz sprawdzić
+    ![](assets/workflow__docker_desktop__inspect_2.png)
+
+1. Kliknij w zakładkę `Inspect`, żeby zobaczyć ustawienia kontenera
+    ![](assets/workflow__docker_desktop__inspect_3.png)
+
+1. Kliknij w zakładkę `Env` żeby zobaczyć ustawienia `zmiennych środowiskowych`
+    ![](assets/workflow__docker_desktop__inspect_4.png)
+
 ## Każdy problem
 Naptkając jakikolwiek problem podczas instalacji lub działania Docker Desktop warto przestawić swój problem dla chata AI (Chat GPT, Cloude, Grok). Warto wtedy dodać, że nie jest się informatykiem i żeby odpowiedział prostym językiem, z opisaniem wszystkich potrzebnych kroków.
