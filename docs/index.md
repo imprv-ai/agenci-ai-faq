@@ -8,7 +8,7 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 
 ## **Pytania i odpowiedzi na najczęściej pojawiające się problemy**
 
-- [Docker Desktop - FAQ](./pages/02_docker_desktop.md)
+- [Problemy z Docker Desktop](./pages/02_docker_desktop.md)
 - [OpenAI - klucz API, logowanie](./pages/03_open_ai.md)
 - [Credentiale Gmail nie działają](./pages/04_credentiale_credentials_problems.md)
 - [Workflow nie działa](./pages/05_workflow_does_not_work.md)
