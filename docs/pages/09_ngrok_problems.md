@@ -29,11 +29,11 @@ tags:
 ![](assets/problems__ngrok__already_exists_1.png)
 
 1. Błąd ten oznacza, że masz już uruchomiony kontener o nazwie `ngrok`
-1. Żeby wyświetlić wszystkie kontenery otwórz Docker Desktop lub wpisz w terminal
+1. Żeby wyświetlić wszystkie kontenery otwórz Docker Desktop lub wpisz w terminal i potwierdź enterem:
 ```
 docker ps -a
 ```
-1. Żeby pozbyć się błędu usuń istniejący kontener ngrok. Możesz to zrobić komendą
+1. Żeby pozbyć się błędu usuń istniejący kontener ngrok. Możesz to zrobić komendą:
 ```
 docker rm -f ngrok
 ```
