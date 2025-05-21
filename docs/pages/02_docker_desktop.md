@@ -7,7 +7,7 @@ tags:
     - FAQ
 ---
 
-# Instalacja Docker Desktop w Windows 10 i 11
+# Problemy Docker Desktop
 
 ## Co potrzebuję, żeby zainstalować Docker Desktop?
 1. Komputer z systemem Windows 10 lub 11. Ważne, żeby system był zaktualizowany – sprawdź to w ustawieniach w sekcji `Aktualizacje Windows`. 
