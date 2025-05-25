@@ -21,8 +21,27 @@ tags:
 
 1. Należy ustawić zmienną środowiskową `WEBHOOK_URL` i jej wartość ustawić na domenę, którą mamy z `ngrok`
 
-   **WAŻNE!** : wartość którą wpisujemy powinna mieć postać `https://TWOJA_DOMENA_NGROK`
+   **WAŻNE!** : wartość którą wpisujemy powinna mieć postać `https://TWOJA_DOMENA_NGROK`
    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+## **Trigger do nasłuchiwania na wiadomości z Telegrama nie reaguje**
+1. Uruchamiam workflow z `Triggerem Telegrama`. Trigger się kręci i nie reaguje na moje wiadomości
+
+1. W pierwszej kolejności sprawdź czy masz poprawnie ustawiony `WEBHOOK_URL` w zmiennych środowiskowych. Możesz to sprawdzić w zakładce `Env` w ustawieniach kontenera `n8n`. Instrukcja jak to zrobić znajduje się tutaj. [Kliknij](../02_docker_desktop/#jak-sprawdzic-ustawienia-kontenera-docker-desktop)
+
+Należy tam szukać linijki `WEBHOOK_URL=https://twoja-domena-z-ngrok.free.app`. **To bardzo ważne żeby na początku było `https://`**
+   ![](assets/problems__telegram__webhook_1.png)
+
+1. Jeśli masz tam taką wartość, to sprawdź czy Twój kontener `ngrok` jest prawidłowo uruchomiony
+W tym celu otwórz stronę `localhost:4040/status`. Jest to strona kontenera `ngrok` uruchomionego na Twoim komputerze.
+
+
+1. Jeśli strona się nie wyświetla. To znaczy, że kontener ngrok nie jest uruchomiony i należy go uruchomić
+   ![](assets/problems__telegram__webhook_2.png)
+
+1. Jeśli `ngrok` jest prawidłowo uruchomiony to zobaczysz stronę statusu
+   ![](assets/problems__telegram__webhook_3.png)
+   Porównaj jeszcze raz wartość pola `URL` z tym co masz w `WEBHOOK_URL`
 
 ## **Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node SWITCH**
 
