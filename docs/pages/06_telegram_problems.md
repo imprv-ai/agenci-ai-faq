@@ -51,3 +51,15 @@ W tym celu otwórz stronę `localhost:4040/status`. Jest to strona kontenera `ng
 1. Zwróć uwagę, żeby w `Routing Rules` w typie porównania wybrać `Array`, a następnie `exists`
    ![](assets/workflow__telegram__photo_2.png)
    ![](assets/workflow__telegram__photo_3.png)
+
+## **Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node Telegram Get File**
+   ![](assets/problems__telegram__photo_1.png)
+   ![](assets/problems__telegram__photo_2.png)
+
+1. Tak się dzieje dlatego, że w zależności od tego jakiej jakości zdjęcie wyślemy, tyle "kopii" zdjęcia przesyła nam telegram w danej wiadomości.
+Jeśli przesyłamy zdjęcie słabej jakości to otrzymamy do 2 elementów
+Jeśli przesyłamy zdjęcie wysokiej jakości to otrzymamy od 3 elementów
+Wartość 3 została zaproponowana w lekcji dlatego, że dla dużych zdjęć ta jakość jest wystarczająco dobra żeby uzyskać satysfakcjonujące efekty.
+
+1. Żeby wrokflow zaweze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram 
+**należy zmienić wartość w polu `File ID` na `{{ $json.channel_post.photo.last().file_id }}`**
