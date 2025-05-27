@@ -16,3 +16,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Problem z app.imprv.ai](./pages/07_imprv_problems.md)
 - [Problem z ngrok](./pages/09_ngrok_problems.md)
 - [Odzyskiwanie loginu i hasła do n8n](./pages/08_reset_password_n8n.md)
+- [Wdrażanie N8N na zdalnym serwerze - dodatkowe informacje](./pages/10_deployment_informations.md)
