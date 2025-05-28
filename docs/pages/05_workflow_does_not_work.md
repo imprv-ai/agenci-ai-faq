@@ -5,9 +5,9 @@ tags:
   - Local File Trigger 
 ---
 
-# **Rozwiązania problemów z workflowami z lekcji**
+# **Rozwiązywanie problemów z workflowami z lekcji**
 
-## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje ( WERSJA DLA SYSTEMU WINDOWS )**
+## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU WINDOWS)**
 
 1. Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo wolumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
    ![](assets/workflows__local_files_example_1.png)
@@ -45,9 +45,9 @@ tags:
 1. Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
 
-## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje ( WERSJA DLA SYSTEMU MACOS )**
+## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU MACOS)**
 
-1. Jeśli pracujesz na systemie MacOS i masz podpięty prawidłowo wolumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
+1. Jeśli pracujesz na systemie macOS i masz podpięty prawidłowo wolumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
    ![](assets/workflows__local_files_example_1.png)
 
 1. Kliknij dwukrotnie w node `Local File Trigger`
@@ -77,7 +77,7 @@ tags:
 1. Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
 
-## **Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie GMAIL**
+## **Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie Gmail**
 
 1. Klikam w node Gmail i nie widzę opcji, które pokazane były na lekcji
    ![](assets/workflow_elzbieta__gmail_1.png)
@@ -88,7 +88,7 @@ tags:
 1. Po deaktywacji `Simplify` będziemy mogli dodać opcje (np. `Download attachments`)
    ![](assets/workflow_elzbieta__gmail_3.png)
 
-## **Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie GMAIL po pobraniu danych**
+## **Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie Gmail po pobraniu danych**
 
 1. Po pobraniu testowego maila z załącznikami nie widzę zakładki `Binary` w sekcji `Output`
    ![](assets/workflow_elzbieta__gmail_no_binary_1.png)
