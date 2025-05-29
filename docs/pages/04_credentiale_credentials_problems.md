@@ -40,7 +40,7 @@ tags:
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/O7QV6X8H1uk?si=QUOOzcxJxuKSwuky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-## **Credentials Google sheet nie działają po ustawieniu `WEBHOOK_URL` i uruchomieniu `ngrok`**
+## **Credentials Google Sheet / Gmail/ Google Drive nie działają po ustawieniu `WEBHOOK_URL` i uruchomieniu `ngrok`**
 
 1. Otwórz któryś z istniejących Credentials jakiegokolwiek serwisu Google ( np, Gmail ) i skopiuj zawartość pola `OAuth Redirect URL`
    ![](assets/problems__google_credentials__ngrok_0.png)
