@@ -44,10 +44,10 @@ tags:
 
 1. Otwórz któryś z istniejących Credentials jakiegokolwiek serwisu Google ( np, Gmail ) i skopiuj zawartość pola `OAuth Redirect URL`
    ![](assets/problems__google_credentials__ngrok_0.png)
-
    ![](assets/problems__google_credentials__ngrok_1.png)
 
 1. Otwórz swój projekt w [Google Cloud Platform](https://console.cloud.google.com/)
+
 1. Dodaj adres skopiowany z `OAuth Redirect URL` do `Authorized Redirect URIs` w Google Cloud
    ![](assets/problems__google_credentials__ngrok_2.png)
 
