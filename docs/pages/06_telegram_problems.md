@@ -61,7 +61,7 @@ Jeśli przesyłamy zdjęcie słabej jakości to otrzymamy do 2 elementów
 Jeśli przesyłamy zdjęcie wysokiej jakości to otrzymamy od 3 elementów
 Wartość 3 została zaproponowana w lekcji dlatego, że dla dużych zdjęć ta jakość jest wystarczająco dobra żeby uzyskać satysfakcjonujące efekty.
 
-1. Żeby wrokflow zaweze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram
+1. Żeby wrokflow zawsze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram
 **należy zmienić wartość w polu `File ID` na `{{ $json.channel_post.photo.last().file_id }}`**
 
 ## **Wersja Web K kontra Web A**
