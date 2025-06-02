@@ -29,3 +29,8 @@ Polecenie można wkleić za pomocą kliknięcia prawym klawiszem myszy i wybrani
 Po zalogowaniu będą dostępne te same workflowy i credentiale. 
 
       ![](assets/workflows__reset_password_4.png)
+
+1. Jeśli po którymkolwiek kroku nie zobaczysz oczekiwanego wyniku, tak jak opisano w powyższych krokach, zrestartuj proszę kontener, na którym pracujesz. Restart kontenera w większości przypadków pozwoli odświeżyć środowisko pracy i umożliwi wykonanie opisanych wyżej instrukcji.
+Możesz to zrobić bezpośrednio z poziomu **Docker Desktop**.
+
+      ![](assets/reset_password_container_restart.png)
