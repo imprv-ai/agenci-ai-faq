@@ -66,11 +66,13 @@ Wartość 3 została zaproponowana w lekcji dlatego, że dla dużych zdjęć ta 
 
 ## **Wersja Web K kontra Web A**
 
-Telegram oferuje dwie totalnie niezależne wersje swoje aplikacji webowej (czyli tej którą uruchamiamy w przeglądarce).
+Telegram oferuje dwie totalnie niezależne wersje swojej aplikacji webowej (czyli tej którą uruchamiamy w przeglądarce).
 
 Wersje te różnią się pod pewnymi względami. Rekomendujemy użycie tzw. wersji `Web A` dostępnej pod adresem [https://web.telegram.org/a/](https://web.telegram.org/a/)
 
-Wersja ta jest wolne od wielu problemów, zwłaszcza w zarządaniu botami i administratorami.
+> UWAGA: Wpisanie w przegladarke [https://web.telegram.org](https://web.telegram.org) pozwoli telegramowi lub / i przeglądarce na wybranie wersji. Wówczas wasza przeglądarka może wymuszać cały czas wersję `/k`. Dopiero wskazanie na [https://web.telegram.org/a](https://web.telegram.org/a) przekierowuje na wersję `Web A`.
+
+Wersja `Web A` jest wolna od wielu problemów, zwłaszcza w zarządaniu botami i administratorami.
 
 Dodatkowo wszystkie nasze lekcje dotyczące Telegrama są stworzone w oparciu o wersję `Web A`.
 
