@@ -1,7 +1,7 @@
 ---
 tags:
   - Moduł 3
-  - Telegram 
+  - Telegram
   - Workflow
 ---
 
@@ -11,9 +11,9 @@ tags:
 
 1. Na stronie Telegrama w adresie www przeglądarki jest numer, który potrzebujemy jako Chat ID.
    ![](assets/workflows__telegram_1.png)
-1. Są przypadki, że ten numer nie ma na początku `-100`. Wtedy do skopiowanego numeru należy taki początek dodać ręcznie. 
+1. Są przypadki, że ten numer nie ma na początku `-100`. Wtedy do skopiowanego numeru należy taki początek dodać ręcznie.
    ![](assets/workflows__telegram_2.png)
-   
+
 ## **Trigger do nasłuchiwania na wiadomości z Telegrama zgłasza błąd**
 
 1. Uruchamiam workflow, w którym mam node nasłuchujący na Telegram i mam taki błąd
@@ -61,5 +61,21 @@ Jeśli przesyłamy zdjęcie słabej jakości to otrzymamy do 2 elementów
 Jeśli przesyłamy zdjęcie wysokiej jakości to otrzymamy od 3 elementów
 Wartość 3 została zaproponowana w lekcji dlatego, że dla dużych zdjęć ta jakość jest wystarczająco dobra żeby uzyskać satysfakcjonujące efekty.
 
-1. Żeby wrokflow zaweze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram 
+1. Żeby wrokflow zawsze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram
 **należy zmienić wartość w polu `File ID` na `{{ $json.channel_post.photo.last().file_id }}`**
+
+## **Wersja Web K kontra Web A**
+
+Telegram oferuje dwie totalnie niezależne wersje swojej aplikacji webowej (czyli tej którą uruchamiamy w przeglądarce).
+
+Wersje te różnią się pod pewnymi względami. Rekomendujemy użycie tzw. wersji `Web A` dostępnej pod adresem [https://web.telegram.org/a/](https://web.telegram.org/a/)
+
+> UWAGA: Wpisanie w przegladarke [https://web.telegram.org](https://web.telegram.org) pozwoli telegramowi lub / i przeglądarce na wybranie wersji. Wówczas wasza przeglądarka może wymuszać cały czas wersję `/k`. Dopiero wskazanie na [https://web.telegram.org/a](https://web.telegram.org/a) przekierowuje na wersję `Web A`.
+
+Wersja `Web A` jest wolna od wielu problemów, zwłaszcza w zarządaniu botami i administratorami.
+
+Dodatkowo wszystkie nasze lekcje dotyczące Telegrama są stworzone w oparciu o wersję `Web A`.
+
+Jeżeli nie wiesz na jakiej wersji pracujesz, to możesz to sprawdzić w adresie URL w przeglądarce, albo:
+
+![](assets/problems__telegram__wersja_web_a.png)
