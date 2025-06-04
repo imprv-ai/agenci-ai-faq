@@ -36,10 +36,10 @@ Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) 
 1. Następnie wróc do **n8n** i w nodzie `Dane Klientów ( Google Sheet)` w kliknij w pole **Document**. Powinien się tam pojawić dokument którzy właśnie został utworzony.
    ![](assets/workflows__client_data__7.png)
 
-1. Następnie w polu **Sheet** wybierz nazwę arkusza w tym dokumencie. W przykładnie nazywał on się `Dane` 
+1. Następnie w polu **Sheet** wybierz nazwę arkusza w tym dokumencie. W przykładzie nazywał on się `Dane` 
    ![](assets/workflows__client_data__8.png)
 
-1. Po wykonaniu tej operacji pojawią się pola o takich nazwach jak kolumny w naszym utowrzonym dokumencie
+1. Po wykonaniu tej operacji pojawią się pola o takich nazwach jak kolumny w naszym utworzonym dokumencie
    ![](assets/workflows__client_data__9.png)
 
 
