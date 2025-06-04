@@ -2,10 +2,47 @@
 tags:
   - Workflow
   - Node
-  - Local File Trigger 
+  - Local File Trigger
+  - Elżbieta
+  - Dane klientów
 ---
 
 # **Rozwiązywanie problemów z workflowami z lekcji**
+
+## **Workflow z czytaniem danych klientów z formularza nie działa - Google Sheet ( Dane Klientów ) nie widzi Document i Sheet**
+1. Jeśli masz podświetlone na czerwono pola **Document** i **Sheet**
+   ![](assets/workflows__client_data__1.png)
+
+1. W pierwszej kolejności upewnij się, że masz wypełnione pole `Credentials to connect with`
+   ![](assets/workflows__client_data__2.png)
+
+1. Jeśli pole jest wypełnione, czyli dane dostępu ( Credentials ) są podpięte, kliknij w `Choose...` w polu **Document**
+Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) są poprawne, ale najprowdopodobniej nie masz jeszcze żadnego utworzonego `Arkusza Google ( Google Sheet )`
+
+1. W takiej sytuacji wejdź na stronę [Google Sheet (kliknij, żeby otworzyć stronę)](https://workspace.google.com/products/sheets/)
+
+1. Następnie zaloguj się
+   ![](assets/workflows__client_data__3.png)
+
+1. Kliknij znak **+ Blank spreadsheet ( Pusty arkusz)**, aby utworzyć nowy arkusz ( google sheet )
+   ![](assets/workflows__client_data__4.png)
+
+1. Kliknij dwukrotnie we wskazane miejsca żeby zmienić nazwę dokumentu (Document), nazwę arkusza (Sheet) oraz aby wstawić nazwy kolumn
+   ![](assets/workflows__client_data__5.png)
+
+1. Po wypełnieniu powinno to wyglądać tak
+   ![](assets/workflows__client_data__6.png)
+
+1. Następnie wróc do **n8n** i w nodzie `Dane Klientów ( Google Sheet)` w kliknij w pole **Document**. Powinien się tam pojawić dokument którzy właśnie został utworzony.
+   ![](assets/workflows__client_data__7.png)
+
+1. Następnie w polu **Sheet** wybierz nazwę arkusza w tym dokumencie. W przykładnie nazywał on się `Dane` 
+   ![](assets/workflows__client_data__8.png)
+
+1. Po wykonaniu tej operacji pojawią się pola o takich nazwach jak kolumny w naszym utowrzonym dokumencie
+   ![](assets/workflows__client_data__9.png)
+
+
 
 ## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU WINDOWS)**
 
