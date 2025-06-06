@@ -5,6 +5,7 @@ tags:
     - Klucz API
     - Secret key
     - API key
+    - Organization
 ---
 
 # **OpenAI - klucz API, logowanie**
@@ -39,3 +40,39 @@ Jeśli masz problem z zalogowaniem się do platformy OpenAI, spróbuj zalogować
    * wybierz konto Google, z którego chcesz się zalogować.
 
     ![](assets/open_ai__login_to_platform__choose_account.png)
+
+## **Jak skonfigurować Organization Name w platformie OpenAI**
+
+Podczas tworzenia konta w platformie OpenAI konieczne jest skonfigurowanie nazwy organizacji. Oto jak to zrobić:
+
+1. Po zalogowaniu do OpenAI, jeśli pojawi się ekran powitalny, kliknij przycisk `Start building` w prawym górnym rogu strony.
+
+    ![](assets/openai_developer_platform_start_building.png)
+    
+    > **Uwaga:** W tej lekcji wideo ten proces jest opisany od czasu 3:23.
+    > 
+    > ![](assets/openai_lesson_timestamp_323.png)
+
+1. Na ekranie tworzenia organizacji:
+
+    ![](assets/openai_developer_platform.png)
+
+    ![](assets/openai_invite_team.png)
+
+   * W polu `Organization name` wpisz nazwę, pod którą będą widoczne wszystkie Twoje zasoby. To nazwa tylko dla Ciebie, możesz wpisać dowolną.
+   * W polu `What best describes you?` wybierz opcję `Not technical`
+   * Kliknij przycisk `Create organization`
+
+
+1. Po utworzeniu organizacji, platforma przeprowadzi Cię przez kilka dodatkowych kroków:
+
+   * Na ekranie `Invite your team` wybierz opcję `I'll invite my team later`
+
+   * Na ekranie `Make your first API call` wybierz opcję `I'll do this later`
+
+   * Na ekranie `Add some API credits` wybierz opcję `I'll buy credits later`
+
+
+1. Po wykonaniu tych kroków znajdziesz się na stronie głównej platformy OpenAI dla deweloperów, gdzie możesz zacząć korzystać z API.
+
+    ![](assets/openai_api_credits.png)
