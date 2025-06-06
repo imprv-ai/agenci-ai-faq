@@ -47,9 +47,13 @@ Podczas tworzenia konta w platformie OpenAI konieczne jest skonfigurowanie nazwy
 
 1. Po zalogowaniu do OpenAI, jeśli pojawi się ekran powitalny, kliknij przycisk `Start building` w prawym górnym rogu strony.
 
-    ![](assets/OpenaiDeveloperPlatform.png)
+    ![](assets/openai_developer_platform_start_building.png)
+    
+    > **Uwaga:** W tej lekcji wideo ten proces jest opisany od czasu 3:23.
+    > 
+    > ![](assets/openai_lesson_timestamp_323.png)
 
-2. Na ekranie tworzenia organizacji:
+1. Na ekranie tworzenia organizacji:
 
     ![](assets/openai_developer_platform.png)
 
@@ -60,7 +64,7 @@ Podczas tworzenia konta w platformie OpenAI konieczne jest skonfigurowanie nazwy
    * Kliknij przycisk `Create organization`
 
 
-3. Po utworzeniu organizacji, platforma przeprowadzi Cię przez kilka dodatkowych kroków:
+1. Po utworzeniu organizacji, platforma przeprowadzi Cię przez kilka dodatkowych kroków:
 
    * Na ekranie `Invite your team` wybierz opcję `I'll invite my team later`
 
@@ -69,6 +73,6 @@ Podczas tworzenia konta w platformie OpenAI konieczne jest skonfigurowanie nazwy
    * Na ekranie `Add some API credits` wybierz opcję `I'll buy credits later`
 
 
-4. Po wykonaniu tych kroków znajdziesz się na stronie głównej platformy OpenAI dla deweloperów, gdzie możesz zacząć korzystać z API.
+1. Po wykonaniu tych kroków znajdziesz się na stronie głównej platformy OpenAI dla deweloperów, gdzie możesz zacząć korzystać z API.
 
     ![](assets/openai_api_credits.png)
