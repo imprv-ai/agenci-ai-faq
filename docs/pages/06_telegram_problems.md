@@ -87,9 +87,12 @@ Jeżeli nie wiesz na jakiej wersji pracujesz, to możesz to sprawdzić w adresie
    ![](assets/workflow__telegram__bad_request.png)
    ![](assets/workflow__telegram__chat_not_found.png)
 
-Jeśli nawet po sprawdzeniu poprawności `Chat ID` i `tokena` błąd nadal występuje, to być może mamy podłączonego jakiegoś "obcego" bota jako administratora naszego czata.
+Jeśli nawet po sprawdzeniu poprawności `Chat ID` i `tokena` błąd nadal występuje, to być może mamy podłączonego jakiegoś obcego lub niepoprawnego bota jako administratora naszego czata.
 
-1. Należy uważać już w momencie wyszukiwania `BotFather` - najlepiej jest wpisać pełną nazwę i wybrać tylko tego bota, który ma dokładnie taką nazwę, ma oznaczenie, że to jest oficjalny bot Telegrama (znaczek w kółku) oraz ma dużą liczbę użytkowników - w chwili robienia tego obrazka było to ponad 3.5 miliona użytkowników.
+1. Należy uważać już w momencie wyszukiwania `BotFather`. Najlepiej wpisz pełną nazwę i wybierz tylko bota, który:
+      - ma dokładnie taką nazwę,
+      - jest oznaczony jako oficjalny bot Telegrama (znaczek w kółku),
+      - posiada dużą liczbę użytkowników – w chwili tworzenia tego obrazka było to ponad 3,5 miliona użytkowników.
 ![](assets/workflow__telegram__botfather.png)
 
 1. Trzeba zapisać lub zapamiętać dokładny `username` tworzonego bota - on jest unikatowy dla całego Telegrama i według tej nazwy będziemy potem przypinać bota jako administratora do naszego kanału w Telegramie.
