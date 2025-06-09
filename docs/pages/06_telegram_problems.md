@@ -2,6 +2,8 @@
 tags:
   - Moduł 3
   - Telegram
+  - bot
+  - chat not found
   - Workflow
 ---
 
@@ -79,3 +81,21 @@ Dodatkowo wszystkie nasze lekcje dotyczące Telegrama są stworzone w oparciu o 
 Jeżeli nie wiesz na jakiej wersji pracujesz, to możesz to sprawdzić w adresie URL w przeglądarce, albo:
 
 ![](assets/problems__telegram__wersja_web_a.png)
+
+## **Pojawia się błąd Bad Reguest: chat not found**
+
+   ![](assets/workflow__telegram__bad_request.png)
+   ![](assets/workflow__telegram__chat_not_found.png)
+
+Jeśli nawet po sprawdzeniu poprawności `Chat ID` i `tokena` błąd nadal występuje, to być może mamy podłączonego jakiegoś "obcego" bota jako administratora naszego czata.
+
+1. Należy uważać już w momencie wyszukiwania `BotFather` - najlepiej jest wpisać pełną nazwę i wybrać tylko tego bota, który ma dokładnie taką nazwę, ma oznaczenie, że to jest oficjalny bot Telegrama (znaczek w kółku) oraz ma dużą liczbę użytkowników - w chwili robienia tego obrazka było to ponad 3.5 miliona użytkowników.
+![](assets/workflow__telegram__botfather.png)
+
+1. Trzeba zapisać lub zapamiętać dokładny `username` tworzonego bota - on jest unikatowy dla całego Telegrama i według tej nazwy będziemy potem przypinać bota jako administratora do naszego kanału w Telegramie.
+![](assets/workflow__telegram__new_bot.png)
+
+1. Podczas podłączania bota jako administratora do naszego kanału należy zachować ostrożność i wpisywać do wyszukiwarki pełny `@username` naszego bota.
+![](assets/workflow__telegram__add_admin.png)
+
+Po dodaniu bota w powyższy sposób i podłączeniu go do naszego czata oraz po ponownym uzupełnieniu `Chat ID` i `tokena` w n8n workflow powinien działać i nie zgłaszać błędu `chat not found`.
