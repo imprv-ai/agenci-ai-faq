@@ -18,3 +18,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Odzyskiwanie loginu i hasła do n8n](./pages/08_reset_password_n8n.md)
 - [Wdrażanie N8N na zdalnym serwerze - dodatkowe informacje](./pages/10_deployment_informations.md)
 - [Workflow do generowania wykresów i wyszukiwania danych - SQL](./pages/11_charts_and_sql_workflows.md)
+- [Aktualizacja n8n w Docker Desktop](./pages/12_update_n8n_in_docker_desktop.md)

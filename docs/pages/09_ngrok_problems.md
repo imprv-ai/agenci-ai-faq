@@ -70,3 +70,13 @@ Unexpected token 'domain=' in expression or statement.
 ```
 docker run -it -d --name ngrok -p 4040:4040 -e NGROK_AUTHTOKEN=TWOJ_TOKEN_AUTENTYKACYJNY_NGROK ngrok/ngrok:latest http host.docker.internal:5678 --domain=TWOJA_DOMENA_W_NGROK
 ```
+
+## Niepoprawny token autentykacyjny
+
+1. Jeśli wyskakuje błąd `authentication failed: The authtoken you specified does not look like a proper ngrok tunnel authtoken` to oznacza, że token autentykacyjny jest niepoprawny.
+![](assets/problems__ngrok__inproper_authtoken.jpg)
+
+1. PAMIĘTAJ! Wpisz "goły" token autentykacyjny, bez ekstra spacji lub dodawania `<` lub `>`. Przykładowa instrukcja dla token `123secret123secret123secret123` oraz domeny `moj-dostepny-do-uzycia-w-ngrok.ngrok-free.app`:
+```bash
+docker run -it -d --name ngrok -p 4040:4040 -e NGROK_AUTHTOKEN=123secret123secret123secret123 ngrok/ngrok:latest http host.docker.internal:5678 --domain=moj-dostepny-do-uzycia-w-ngrok.ngrok-free.app
+```
