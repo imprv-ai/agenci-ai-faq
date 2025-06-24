@@ -132,3 +132,29 @@ Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) 
 
 1. Zakładka Binary widoczna jest jedynie w sytuacji, gdy pobrane zostaną pliki. Node nie pobierze plików, jeżeli nie zaznaczymy opcji `Download attachments`. Należy zatem zaznaczyć tę opcję i ponownie pobrać dane.
    ![](assets/workflow_elzbieta__gmail_no_binary_2.png)
+
+
+
+## **Generowanie zdjęcia w modułu o Adamie Marketingowcu nie działa**
+Wyświetla się taki błąd:
+
+   ![](assets/openai__image_gen__verification.png)
+
+
+1. Błąd informuje nas o tym, że żeby użyć modelu `gpt-image-1` musimy zweryfikować naszą organizację w OpenAI.
+Wymaga to:
+- Zweryfikowania metody płatności
+- Zweryfikowania naszej tożsamości
+
+1. Aby zweryfikować naszą tożsamość, należy przejść do strony [OpenAI](https://platform.openai.com/account/billing/payment-methods) i dodać metodę płatności.
+
+1. Następnie należy przejść do strony [OpenAI](https://platform.openai.com/settings/organization/general) i zweryfikować naszą tożsamość.
+
+1. Najpierw należy kliknąć w `Verify Organization`
+   ![](assets/openai__image_gen__verify_organization_1.png)
+
+1. Następnie należy kliknąć w `Start ID Check` i podążać za dalszymi instrukcjami.
+   ![](assets/openai__image_gen__verify_organization_2.png)
+
+
+1. Po zweryfikowaniu naszej tożsamości, możemy ponownie spróbować wygenerować zdjęcie.
