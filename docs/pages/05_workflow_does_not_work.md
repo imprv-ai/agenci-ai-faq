@@ -5,6 +5,9 @@ tags:
   - Local File Trigger
   - Elżbieta
   - Dane klientów
+  - Google Sheet
+  - Adam Marketingowiec
+  - Generowanie grafiki
 ---
 
 # **Rozwiązywanie problemów z workflowami z lekcji**
@@ -17,9 +20,9 @@ tags:
    ![](assets/workflows__client_data__2.png)
 
 1. Jeśli pole jest wypełnione, czyli dane dostępu ( Credentials ) są podpięte, kliknij w `Choose...` w polu **Document**
-Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) są poprawne, ale najprowdopodobniej nie masz jeszcze żadnego utworzonego `Arkusza Google ( Google Sheet )`
+Jeśli lista jest pusta, oznacza to, że podpięte dane dostępu ( Credentials ) są poprawne, ale najprowdopodobniej nie masz jeszcze żadnego utworzonego `Arkusza Google ( Google Sheet )`
 
-1. W takiej sytuacji wejdź na stronę [Google Sheet (kliknij, żeby otworzyć stronę)](https://workspace.google.com/products/sheets/)
+1. W takiej sytuacji wejdź na stronę [Google Sheet (kliknij, żeby otworzyć stronę)](https://workspace.google.com/products/sheets/)
 
 1. Następnie zaloguj się
    ![](assets/workflows__client_data__3.png)
@@ -27,13 +30,13 @@ Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) 
 1. Kliknij znak **+ Blank spreadsheet ( Pusty arkusz)**, aby utworzyć nowy arkusz ( google sheet )
    ![](assets/workflows__client_data__4.png)
 
-1. Kliknij dwukrotnie we wskazane miejsca żeby zmienić nazwę dokumentu (Document), nazwę arkusza (Sheet) oraz aby wstawić nazwy kolumn
+1. Kliknij dwukrotnie we wskazane miejsca żeby zmienić nazwę dokumentu (Document), nazwę arkusza (Sheet) oraz aby wstawić nazwy kolumn
    ![](assets/workflows__client_data__5.png)
 
 1. Po wypełnieniu powinno to wyglądać tak
    ![](assets/workflows__client_data__6.png)
 
-1. Następnie wróć do **n8n** i w nodzie `Dane Klientów ( Google Sheet)` w kliknij w pole **Document**. Powinien się tam pojawić dokument którzy właśnie został utworzony
+1. Następnie wróć do **n8n** i w nodzie `Dane Klientów ( Google Sheet)` kliknij w pole **Document**. Powinien się tam pojawić dokument, który właśnie został utworzony
    ![](assets/workflows__client_data__7.png)
 
 1. Następnie w polu **Sheet** wybierz nazwę arkusza w tym dokumencie. W przykładzie nazywał on się `Dane` 
@@ -82,7 +85,7 @@ Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) 
 1. Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
    ![](assets/workflows__directories_2.png)
 
-## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU MACOS)**
+## **Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU macOS)**
 
 1. Jeśli pracujesz na systemie macOS i masz podpięty prawidłowo wolumen do folderu `pliki_n8n`, a Local Files Trigger nie reaguje
    ![](assets/workflows__local_files_example_1.png)
@@ -135,7 +138,7 @@ Jeśli lista jest pusta, oznacza to że podpięte dane dostępu ( Credentials ) 
 
 
 
-## **Generowanie zdjęcia w modułu o Adamie Marketingowcu nie działa**
+## **Generowanie zdjęcia w module o Adamie Marketingowcu nie działa**
 Wyświetla się taki błąd:
 
    ![](assets/openai__image_gen__verification.png)
