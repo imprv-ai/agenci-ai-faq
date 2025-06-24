@@ -146,15 +146,16 @@ Wymaga to:
 - Zweryfikowania metody płatności
 - Zweryfikowania naszej tożsamości
 
-1. Aby zweryfikować naszą tożsamość, należy przejść do strony [OpenAI](https://platform.openai.com/account/billing/payment-methods) i dodać metodę płatności.
 
-1. Następnie należy przejść do strony [OpenAI](https://platform.openai.com/settings/organization/general) i zweryfikować naszą tożsamość.
+1. Następnie należy przejść do strony [OpenAI](https://platform.openai.com) i wybrać ustawienia organizacji.
+   ![](assets/openai__image_gen__verification_0.png)
 
-1. Najpierw należy kliknąć w `Verify Organization`
-   ![](assets/openai__image_gen__verify_organization_1.png)
+
+1. Następnie należy kliknąć w `Verify Organization`
+   ![](assets/openai__image_gen__verification_1.png)
 
 1. Następnie należy kliknąć w `Start ID Check` i podążać za dalszymi instrukcjami.
-   ![](assets/openai__image_gen__verify_organization_2.png)
+   ![](assets/openai__image_gen__verification_2.png)
 
 
 1. Po zweryfikowaniu naszej tożsamości, możemy ponownie spróbować wygenerować zdjęcie.
