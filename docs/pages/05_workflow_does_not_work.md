@@ -145,10 +145,7 @@ Wyświetla się taki błąd:
 
 
 1. Błąd informuje nas o tym, że żeby użyć modelu `gpt-image-1` musimy zweryfikować naszą organizację w OpenAI.
-Wymaga to:
-- Zweryfikowania metody płatności
-- Zweryfikowania naszej tożsamości
-
+Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamości**.
 
 1. Następnie należy przejść do strony [OpenAI](https://platform.openai.com) i wybrać ustawienia organizacji.
    ![](assets/openai__image_gen__verification_0.png)
