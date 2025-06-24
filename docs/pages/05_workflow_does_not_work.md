@@ -159,3 +159,5 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
 
 
 1. Po zweryfikowaniu naszej tożsamości, możemy ponownie spróbować wygenerować zdjęcie.
+   Tak wygląda strona po zweryfikowaniu naszej tożsamości
+   ![](assets/openai__image_gen__verification_3.png)
