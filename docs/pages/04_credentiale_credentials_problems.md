@@ -21,10 +21,10 @@ tags:
 
 
 ## **Credentials Google - nie mogę pobrać Client Secret z Google Cloud Platform**
-Kiedy otwieram credentials w Google Cloud Platform to nie mogę skopiować Client Secret ponieważ jest zaszyfrowany ( wygwiazdkowany )
+Kiedy otwieram credentials w Google Cloud Platform to nie mogę skopiować Client Secret ponieważ jest zaszyfrowany ( oznaczony gwiazdkami )
    ![](assets/google_cloud__credentials__secrets_0.png)
 **Dlaczego tak się dzieje?**
-Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkownik jest odpowiedzialny za bezpieczne przechowywanie swojego sekretu ( `Client Secret` ). Przez tę zmianę Google pozwala pobrać `Client Secret` jednynie w momencie Tworzenia credentials.
+Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkownik jest odpowiedzialny za bezpieczne przechowywanie swojego sekretu ( `Client Secret` ). Przez tę zmianę Google pozwala pobrać `Client Secret` jedynie w momencie tworzenia credentials.
 
 **Co należy zrobić?**
 
@@ -40,7 +40,7 @@ Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkow
    ![](assets/google_cloud__credentials__secrets_4.png)
 
 1. W kolejnym kroku pojawią się nasze dane dostępowe ( czyli `Client ID` i `Client Secret` ). Należy je skopiować i zapisać w bezpiecznym miejscu.
-   Można również je pobrać jako plik klikając na `Download JSON`. Wartości `Client ID` i `Client Secret` warto wpisać od razu do credentiali w n8n.
+   Można również je pobrać jako plik klikając na `Download JSON`. Wartości `Client ID` i `Client Secret` warto wpisać od razu do credentials w n8n.
    ![](assets/google_cloud__credentials__secrets_5.png)
    **Proces ustawiania credentials w n8n został opisany w tym samouczku**
    [Kliknij, żeby przejść do instrukcji](../04_credentiale_credentials_problems/#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret)
