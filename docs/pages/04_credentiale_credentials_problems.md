@@ -5,6 +5,9 @@ tags:
   - Credentials
   - n8n
   - Google
+  - Google Cloud Platform
+  - Client Id
+  - Client Secret
 ---
 
 # **Rozwiązania problemów z credentials Google**
@@ -17,6 +20,30 @@ tags:
     </div>
 
 
+## **Credentials Google - nie mogę pobrać Client Secret z Google Cloud Platform**
+Kiedy otwieram credentials w Google Cloud Platform to nie mogę skopiować Client Secret ponieważ jest zaszyfrowany ( wygwiazdkowany )
+   ![](assets/google_cloud__credentials__secrets_0.png)
+**Dlaczego tak się dzieje?**
+Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkownik jest odpowiedzialny za bezpieczne przechowywanie swojego sekretu ( `Client Secret` ). Przez tę zmianę Google pozwala pobrać `Client Secret` jednynie w momencie Tworzenia credentials.
+
+**Co należy zrobić?**
+
+1. Otwórz **nowe** credentials w Google Cloud Platform. Wybieramy `Create credentials`
+   ![](assets/google_cloud__credentials__secrets_1.png)
+   A następnie z listy wybieramy `OAuth client ID`
+   ![](assets/google_cloud__credentials__secrets_2.png)
+
+1. W kolejnym kroku wybieramy `Web application`, ustalamy nazwę naszych Credentials, ustawiamy `Authorized redirect URIs` na `http://localhost:5678/rest/oauth2-credential/callback`
+   ![](assets/google_cloud__credentials__secrets_3.png)
+
+1. A następnie klikamy na `Create`
+   ![](assets/google_cloud__credentials__secrets_4.png)
+
+1. W kolejnym kroku pojawią się nasze dane dostępowe ( czyli `Client ID` i `Client Secret` ). Należy je skopiować i zapisać w bezpiecznym miejscu.
+   Można również je pobrać jako plik klikając na `Download JSON`. Wartości `Client ID` i `Client Secret` warto wpisać od razu do credentiali w n8n.
+   ![](assets/google_cloud__credentials__secrets_5.png)
+   **Proces ustawiania credentials w n8n został opisany w tym samouczku**
+   [Kliknij, żeby przejść do instrukcji](../04_credentiale_credentials_problems/#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret)
 ## **Credentials Gmail - Node Gmail nie działa i zwraca błąd przy wywołaniu workflow**
 
 1. Jeśli widzisz taki błąd
