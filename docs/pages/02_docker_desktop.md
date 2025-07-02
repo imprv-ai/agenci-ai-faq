@@ -120,8 +120,23 @@ To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 2. Po instalacji dodaj Docker Desktop do wyjątków.
 
 
-## Jak sprawdzić, czy Docker działa?
-Po instalacji zobaczysz ikonkę Docker (mały wieloryb) na pasku zadań, obok zegarka. Kliknij ją – jeśli się otwiera i nie pokazuje błędów, to wszystko jest w porządku!
+## Jak sprawdzić, czy Docker Desktop działa?
+
+Po instalacji Docker Desktop działa w tle jako usługa systemowa. Aby sprawdzić jego status:
+
+1. **Sprawdź ikonę w trayu systemowym** - w prawym dolnym rogu ekranu, obok zegarka, powinna być widoczna ikona Docker (mały wieloryb). Jeśli nie widzisz ikony, kliknij strzałkę w górę `^` aby rozwinąć ukryte ikony.
+
+    ![](./assets/docker_desktop_icon.png)
+
+2. **Status "Docker Desktop running"** - po najechaniu kursorem na ikonę powinien pojawić się tooltip z napisem "Docker Desktop running".
+
+3. **Kliknij na ikonę Docker** - jeśli się otwiera panel zarządzania i nie pokazuje błędów, oznacza to, że Docker działa poprawnie.
+
+**Ważna informacja:** Po zamknięciu okna Docker Desktop aplikacja **nie wyłącza się całkowicie** – tylko minimalizuje się do trayu systemowego i nadal działa w tle. To normalne zachowanie, które pozwala na ciągłe działanie kontenerów bez konieczności utrzymywania otwartego okna aplikacji.
+
+Aby całkowicie wyłączyć Docker Desktop:
+- Kliknij prawym przyciskiem myszy na ikonę w trayu
+- Wybierz `Quit Docker Desktop`
 
 ## Docker Desktop nie uruchamia się po instalacji
 **Problem:** Po zainstalowaniu nie pojawia się okno aplikacji.
