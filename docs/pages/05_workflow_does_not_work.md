@@ -161,3 +161,39 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
 1. Po zweryfikowaniu naszej tożsamości, możemy ponownie spróbować wygenerować zdjęcie.
    Tak wygląda strona po zweryfikowaniu naszej tożsamości
    ![](assets/openai__image_gen__verification_3.png)
+
+## **Workflow nie działa - błąd "Bad request - please check your parameters"**
+
+1. Jeśli podczas wykonywania workflow widzisz błąd `Bad request - please check your parameters` w node'zie z polską nazwą:
+   
+      ![](assets/workflow__polish_characters__error_1.png)
+
+1. W sekcji `Output` zobaczysz szczegółowy błąd informujący o nieprawidłowej nazwie funkcji, która nie pasuje do wzorca `^[a-zA-Z0-9_-]+$`
+   
+      ![](assets/workflow__polish_characters__error_2.png)
+
+1. Problem występuje w node'ach z polskimi znakami w nazwie (ą, ć, ę, ł, ń, ó, ś, ź, ż), które nie są dozwolone w niektórych kontekstach API
+      ![](assets/workflow__polish_characters__workflow.png)
+
+### **Rozwiązanie:**
+
+1. **Zmień nazwę node'a** na angielską lub usuń polskie znaki:
+      - zamiast "Agent kategoryzujący faktury" użyj "Agent_kategoryzujacy_faktury" lub "Invoice_Categorizer"
+      - zamiast "rejestr_kosztów_kategoria1" użyj "rejestr_kosztow_kategoria1" lub "cost_register_category1"
+
+1. **Kliknij dwukrotnie** na problematyczny node, aby otworzyć jego ustawienia
+
+1. **W górnej części** znajdź pole z nazwą node'a i zmień ją na wersję bez polskich znaków
+
+1. **Zapisz zmiany** i uruchom workflow ponownie
+
+### **Dozwolone znaki w nazwach node'ów:**
+- Litery angielskie: `a-z`, `A-Z`
+- Cyfry: `0-9`
+- Podkreślnik: `_`
+- Myślnik: `-`
+
+### **Niedozwolone znaki:**
+- Polskie znaki diakrytyczne: `ą`, `ć`, `ę`, `ł`, `ń`, `ó`, `ś`, `ź`, `ż`
+- Spacje (użyj podkreślnika zamiast spacji)
+- Znaki specjalne: `@`, `#`, `$`, `%`, `&`, `*`, `(`, `)`, `+`, `=`, itp.
