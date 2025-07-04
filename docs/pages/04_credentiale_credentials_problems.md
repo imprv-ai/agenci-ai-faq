@@ -80,3 +80,18 @@ Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkow
 
    *Jeśli potrzebujesz przypomnienia jak się poruszać po Google Cloud zerknij na
    [tę instrukcję](./#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret)*
+
+## **Usuwanie niepotrzebnych/niedziałających credentials z node'a w n8n**
+
+Jeśli masz niepotrzebne lub niedziałające credentials skonfigurowane w swoim node'ie w n8n, możesz je łatwo usunąć wykonując poniższe kroki:
+
+1. **Otwórz ustawienia node'a z credentials** - kliknij na ikonę edycji (ołówek) w prawym górnym rogu node'a, dla którego chcesz usunąć credentials.
+   ![](assets/credentials__remove__edit_icon.png)
+
+1. **Przejdź do ustawień credentials** - w oknie ustawień node'a przejdź do sekcji credentials i kliknij na ikonę kosza (usuwania) w prawym górnym rogu okna credentials.
+   ![](assets/credentials__remove__delete_icon.png)
+
+1. **Potwierdź usunięcie** - pojawi się okno dialogowe z pytaniem czy na pewno chcesz usunąć credentials. Kliknij przycisk **"Yes, delete"** aby potwierdzić usunięcie.
+   ![](assets/credentials__remove__confirm_delete.png)
+
+**Uwaga:** Usunięcie credentials może spowodować, że inne workflow wykorzystujące te same credentials przestaną działać. Upewnij się, że nie są używane w innych miejscach przed ich usunięciem.
