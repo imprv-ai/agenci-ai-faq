@@ -85,6 +85,9 @@ Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkow
 
 Jeśli masz niepotrzebne lub niedziałające credentials skonfigurowane w swoim node'ie w n8n, możesz je łatwo usunąć wykonując poniższe kroki:
 
+!!! warning "Uwaga"
+    Usunięcie credentials może spowodować, że inne workflow wykorzystujące te same credentials przestaną działać. Upewnij się, że nie są używane w innych miejscach przed ich usunięciem.
+
 1. **Otwórz ustawienia node'a z credentials** - kliknij na ikonę edycji (ołówek) w prawym górnym rogu node'a, dla którego chcesz usunąć credentials.
    ![](assets/credentials__remove__edit_icon.png)
 
@@ -94,4 +97,3 @@ Jeśli masz niepotrzebne lub niedziałające credentials skonfigurowane w swoim 
 1. **Potwierdź usunięcie** - pojawi się okno dialogowe z pytaniem czy na pewno chcesz usunąć credentials. Kliknij przycisk **"Yes, delete"** aby potwierdzić usunięcie.
    ![](assets/credentials__remove__confirm_delete.png)
 
-**Uwaga:** Usunięcie credentials może spowodować, że inne workflow wykorzystujące te same credentials przestaną działać. Upewnij się, że nie są używane w innych miejscach przed ich usunięciem.
