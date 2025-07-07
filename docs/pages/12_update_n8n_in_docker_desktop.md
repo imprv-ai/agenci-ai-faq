@@ -2,7 +2,7 @@
 tags:
   - n8n
   - update
-  - ewaluacje
+  - docker
 ---
 
 # **Aktualizacja n8n w Docker Desktop**
