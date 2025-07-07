@@ -19,3 +19,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Wdrażanie N8N na zdalnym serwerze - dodatkowe informacje](./pages/10_deployment_informations.md)
 - [Workflow do generowania wykresów i wyszukiwania danych - SQL](./pages/11_charts_and_sql_workflows.md)
 - [Aktualizacja n8n w Docker Desktop](./pages/12_update_n8n_in_docker_desktop.md)
+- [Aktywacja ewaluacji w N8N](./pages/13_evaluation_activation_n8n.md)
