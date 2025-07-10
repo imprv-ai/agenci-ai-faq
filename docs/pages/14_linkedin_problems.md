@@ -12,7 +12,7 @@ Podczas pracy z n8n i LinkedIn, zwłaszcza przy użyciu `ngrok` oraz lokalnie, m
 
 ***Diagnoza:*** W oknie tworzenia poświadczeń n8n, w polu `Redirect URL` brakuje protokołu `https://` na początku adresu.
 
-***Przyczyna:*** Gdy n8n działa pod adresem z `ngrok`, ale nie ma ustawionej zmiennej `WEBHOOK_URL`, w oknie tworzenia poświadczeń wyświetla `Redirect URL` bez protokołu `https://` na początku, tak jak tutaj:
+***Przyczyna:*** Ten problem występuje, gdy zmienna środowiskowa `WEBHOOK_URL` została ustawiona, ale bez protokołu `https://`. Na przykład, zamiast `https://moja-domena.ngrok-free.app` wpisano tylko `moja-domena.ngrok-free.app`.
 
 ![Błąd w LinkedIn - brakujący protokół](assets/linkedin-missing-protocol-error.png)
 
@@ -20,7 +20,7 @@ Jeśli skopiujesz i wkleisz taki niekompletny adres do ustawień aplikacji Linke
 
 ![URL w n8n bez protokołu](assets/linkedin-n8n-ngrok-url.png)
 
-***Rozwiązanie:*** Utworzyć kontener n8n z `WEBHOOK_URL` ustawionym na adres `ngrok`.
+***Rozwiązanie:*** Popraw zmienną środowiskową `WEBHOOK_URL` w konfiguracji swojego kontenera Docker, upewniając się, że zawiera ona pełny adres wraz z protokołem, np. `https://twoj-adres.ngrok-free.app`.
 
 ### 3. Błąd "The redirect_uri does not match the registered value" (z ngrok)
 
