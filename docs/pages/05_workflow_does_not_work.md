@@ -197,3 +197,18 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
 - Polskie znaki diakrytyczne: `ą`, `ć`, `ę`, `ł`, `ń`, `ó`, `ś`, `ź`, `ż`
 - Spacje (użyj podkreślnika zamiast spacji)
 - Znaki specjalne: `@`, `#`, `$`, `%`, `&`, `*`, `(`, `)`, `+`, `=`, itp.
+
+## **Workflow nie działa: Google Docs node - błąd "Bad request - please check your parameters"**
+
+1. Jeśli podczas wykonywania workflow widzisz błąd `Bad request - please check your parameters` w nodzie Google Docs, a ID dokumentu jest poprawnie odczytywane, lecz node dalej nie przetwarza pliku:
+   
+      ![](assets/Google_Docs_file_type.png)
+
+2. W sekcji `Output` pole `Error details` będzie puste, bez dodatkowych informacji o przyczynie błędu. Najprawdopodobniej problem jest spowodowany typem pliku. Node Google Docs wymaga plików w natywnym formacie Google Workspace. 
+   
+   
+### **Rozwiązanie:**   
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1104451712?h=8dad1a82e2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Problem filtrowania zaimportowanego pliku"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
+
+
+
