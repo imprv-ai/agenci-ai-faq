@@ -208,26 +208,7 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
    
    
 ### **Rozwiązanie:**   
-Upewnij się, że plik do który starasz sie procesować ma jeden z tych formatów:
-
-| Nazwa aplikacji             | Typ pliku                      | Rozszerzenie |
-|----------------------------|--------------------------------|--------------|
-| **Dokumenty Google**       | Dokument tekstowy              | `.gdoc`      |
-| **Arkusze Google**         | Arkusz kalkulacyjny            | `.gsheet`    |
-| **Prezentacje Google**     | Prezentacja                    | `.gslides`   |
-| **Rysunki Google**         | Rysunek                        | `.gdraw`     |
-| **Formularze Google**      | Formularz (ankieta, test)      | `.gform`     |
-| **Sites Google**           | Witryna                        | `.gsites`    |
-| **Skrypty Google Apps**    | Skrypt automatyzujący          | `.gs`        |
-| **Jamboard**               | Tablica interaktywna           | `.gjam`      |
-| **Google My Maps**         | Niestandardowa mapa            | `.gmaps`     |  
-
-
-Google Docs node NIE obsługuje zewnętrznych formatów takich jak:
-PDF (.pdf)
-Microsoft Word (.doc, .docx)
-Zwykłe pliki tekstowe (.txt)
-HTML (.html)
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1104451712?h=8dad1a82e2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Problem filtrowania zaimportowanego pliku"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
 
 
 
