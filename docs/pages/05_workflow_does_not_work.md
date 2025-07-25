@@ -197,3 +197,37 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
 - Polskie znaki diakrytyczne: `ą`, `ć`, `ę`, `ł`, `ń`, `ó`, `ś`, `ź`, `ż`
 - Spacje (użyj podkreślnika zamiast spacji)
 - Znaki specjalne: `@`, `#`, `$`, `%`, `&`, `*`, `(`, `)`, `+`, `=`, itp.
+
+## **Workflow nie działa: Google Docs node - błąd "Bad request - please check your parameters"**
+
+1. Jeśli podczas wykonywania workflow widzisz błąd `Bad request - please check your parameters` w nodzie Google Docs, a ID dokumentu jest poprawnie odczytywane, lecz node dalej nie przetwarza pliku:
+   
+      ![](assets/Google_Docs_file_type.png)
+
+2. W sekcji `Output` pole `Error details` będzie puste, bez dodatkowych informacji o przyczynie błędu. Najprawdopodobniej problem jest spowodowany typem pliku. Node Google Docs wymaga plików w natywnym formacie Google Workspace. 
+   
+   
+### **Rozwiązanie:**   
+Upewnij się, że plik do który starasz sie procesować ma jeden z tych formatów:
+
+| Nazwa aplikacji             | Typ pliku                      | Rozszerzenie |
+|----------------------------|--------------------------------|--------------|
+| **Dokumenty Google**       | Dokument tekstowy              | `.gdoc`      |
+| **Arkusze Google**         | Arkusz kalkulacyjny            | `.gsheet`    |
+| **Prezentacje Google**     | Prezentacja                    | `.gslides`   |
+| **Rysunki Google**         | Rysunek                        | `.gdraw`     |
+| **Formularze Google**      | Formularz (ankieta, test)      | `.gform`     |
+| **Sites Google**           | Witryna                        | `.gsites`    |
+| **Skrypty Google Apps**    | Skrypt automatyzujący          | `.gs`        |
+| **Jamboard**               | Tablica interaktywna           | `.gjam`      |
+| **Google My Maps**         | Niestandardowa mapa            | `.gmaps`     |  
+
+
+Google Docs node NIE obsługuje zewnętrznych formatów takich jak:
+PDF (.pdf)
+Microsoft Word (.doc, .docx)
+Zwykłe pliki tekstowe (.txt)
+HTML (.html)
+
+
+
