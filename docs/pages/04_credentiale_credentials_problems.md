@@ -89,7 +89,7 @@ Jeśli przy łączeniu credentials Google widzisz komunikat o błędzie w oknie 
 
 **Rozwiązanie - uruchom n8n na standardowym porcie 5678**
 
-   1. Zatrzymaj i usuń kontener n8n działający na porcie 5679 (np. w Docker Desktop).
+   1. Zatrzymaj i usuń kontener n8n działający na porcie 5679
          ![](assets/n8n__stop_and_delete_container.png)
 
    1. Przejdź do sekcji `Images` i wybierz obraz `n8nio/n8n`
