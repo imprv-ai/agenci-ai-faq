@@ -87,41 +87,25 @@ Jeśli przy łączeniu credentials Google widzisz komunikat o błędzie w oknie 
 
 ![](assets/credentials__insufficient_permissions.png)
 
-**Rozwiązanie (wybierz jedno):**
+**Rozwiązanie - uruchom n8n na standardowym porcie 5678**
 
-1. **Dostosuj Google Cloud do portu 5679**  
-    - Otwórz Google Cloud Platform [link](https://console.cloud.google.com/) i kliknij na ikonę nawigacji w lewym górnym rogu.
-         ![](assets/credentials__navigation_menu.png)
-         
-    - Wejdź do `APIs & Services` → `Credentials`
-         ![](assets/credentials__credentials_tab.png)
-
-    - Wybierz swój `OAuth 2.0 Client ID` → `Edit` (ikona ołówka)
-         ![](assets/credentials__oauth_edit.png)
-
-    - W sekcji `Authorized redirect URIs` dodaj wpis:  
-     `http://localhost:5679/rest/oauth2-credential/callback`
-         ![](assets/credentials__oauth_redirect_uris.png)
-    - Zapisz zmiany klikając na `Save`. Zanim zaczną obowiązywać może minąć kilka minut.  
-    - Wróć do n8n i ponów `Sign in with Google`.
-   
-2. **Uruchom n8n na standardowym porcie 5678**  
-    - Zatrzymaj i usuń kontener n8n działający na porcie 5679 (np. w Docker Desktop).
+   1. Zatrzymaj i usuń kontener n8n działający na porcie 5679 (np. w Docker Desktop).
          ![](assets/n8n__stop_and_delete_container.png)
 
-    - Przejdź do sekcji `Images` i wybierz obraz `n8nio/n8n`
+   1. Przejdź do sekcji `Images` i wybierz obraz `n8nio/n8n`
          ![](assets/n8n__run_image.png)
 
-    - Uruchom ponownie kontener n8n mapując port `5678:5678` (tak aby aplikacja była dostępna pod `http://localhost:5678`).  
+   1. Uruchom ponownie kontener n8n mapując port `5678:5678` (tak aby aplikacja była dostępna pod `http://localhost:5678`).  
          ![](assets/n8n__host_port.png)
 
-        !!! warning "Uwaga" 
-            Nie zapomnij wypełnić reszty pól! W przeciwnym razie n8n nie będzie działał.
+    !!! warning "Uwaga" 
+        Nie zapomnij wypełnić reszty pól! 
+        W przeciwnym razie n8n nie będzie działał.
 
-    - Upewnij się, że w Google Cloud `Authorized redirect URIs` zawiera `http://localhost:5678/rest/oauth2-credential/callback`.
+   1. Upewnij się, że w Google Cloud `Authorized redirect URIs` zawiera `http://localhost:5678/rest/oauth2-credential/callback`.
          ![](assets/credentials__redirect_uris.png)
 
-    - Wróć do n8n i ponów `Sign in with Google`.
+   1. Wróć do n8n i ponów `Sign in with Google`.
 
 ## **Usuwanie niepotrzebnych/niedziałających credentials z node'a w n8n**
 
