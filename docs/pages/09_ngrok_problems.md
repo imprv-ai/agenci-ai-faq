@@ -80,3 +80,21 @@ docker run -it -d --name ngrok -p 4040:4040 -e NGROK_AUTHTOKEN=TWOJ_TOKEN_AUTENT
 ```bash
 docker run -it -d --name ngrok -p 4040:4040 -e NGROK_AUTHTOKEN=123secret123secret123secret123 ngrok/ngrok:latest http host.docker.internal:5678 --domain=moj-dostepny-do-uzycia-w-ngrok.ngrok-free.app
 ```
+
+## **Przekroczono limit zapytań HTTP w ngrok (ERR_NGROK_727)**
+
+1. Jeśli po wejściu na swoją domenę widzisz komunikat jak poniżej, oznacza to, że Twoje konto przekroczyło dopuszczalną liczbę zapytań HTTP w bieżącym okresie rozliczeniowym:
+    ![](assets/problems__ngrok__requests_exceeded.png)
+
+2. Wejdź na [dashboard ngrok](https://dashboard.ngrok.com/) i przejdź do zakładki `Usage`, aby potwierdzić przekroczenie limitów. Zwróć uwagę na pozycję `HTTPS Endpoint Requests` oraz `TCP Connection Rate Limit`:
+    ![](assets/problems__ngrok__usage_limits.png)
+
+### Co to oznacza?
+
+- Limit zapytań zależy od planu. W planie darmowym można go przekroczyć podczas testów lub gdy z aplikacji korzysta wielu użytkowników/botów.
+
+### Jak to naprawić?
+
+- **Szybkie obejście (tymczasowe)**: Wstrzymaj ruch do tunelu (czyli zamknij publiczne udostępnienia - kontener ngrok) i poczekaj do resetu limitu w kolejnym cyklu rozliczeniowym (widoczny w prawym górnym rogu strony `Usage` - zazwyczaj jest to kolejny miesiąc).
+
+- **Alternatywa**: Postaw n8n zdalnie w jakimś serwisie chmurowym (np. n8n Cloud, Railway, DigitalOcean, AWS, itp.) - w ten sposób unikniesz problemów z tunelowaniem. Sposób zdalnego wdrożenia n8n uczymy się w **Module 5**.
