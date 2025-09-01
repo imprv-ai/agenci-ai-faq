@@ -14,6 +14,20 @@ tags:
 2. Potrzebujesz też trochę miejsca na dysku (około 10 GB).
 3. Przeglądarka internetowa Chrome, Edge. U wielu użytkowników są problemy podczas używania Safari.
 
+## Sprawdź funkcje systemu Windows (przed instalacją)
+Zanim zainstalujesz Docker Desktop, upewnij się, że wymagane funkcje Windows są włączone:
+
+1. Otwórz okno funkcji Windows: w menu Start wpisz `Włącz lub wyłącz funkcje systemu Windows` (po angielsku: `Enable or disable Windows features`).
+2. Sprawdź, czy zaznaczone są następujące pozycje:
+    - Hyper-V
+    - Virtual Machine Platform
+    - Windows Hypervisor Platform
+    - Windows Subsystem for Linux
+    ![](./assets/windows_features__hyperv_wsl.png)
+3. Zatwierdź zmiany i — jeśli system o to poprosi — zrestartuj komputer.
+
+Jeśli po zastosowaniu tych kroków nadal pojawiają się błędy związane z wirtualizacją, przejdź do konfiguracji w BIOS i włącz `Intel Virtualization Technology (VMX)` – szczegóły poniżej w sekcji [Ustawienie w BIOS Intel Virtualization Technology (VMX)](#bios-vmx).
+
 ## Skąd pobrać Docker Desktop?
 Wejdź na oficjalną stronę Docker: ([www.docker.com](https://docker.com)). Kliknij przycisk `Download Docker Desktop` – wybierz wersję dla Windows (najczęściej będzie to wersja AMD64). Plik się pobierze, a Ty musisz go potem otworzyć.
 
@@ -42,6 +56,7 @@ Sprawdź, czy pobrałeś cały plik – czasem internet przerywa i plik jest usz
 
 To automatycznie zainstaluje WSL 2 i jeśli Docker Desktop nie dokończy sam instalacji to należy go odinstalować i **zainstalować ponownie** od nowa (patrz punkt **Instalacja się zawiesza**).
 
+<a id="bios-vmx"></a>
 ## Ustawienie w BIOS Intel Virtualization Technology (VMX)
 
 **Co to jest BIOS?** BIOS to specjalny program uruchamiany podczas startu komputera, zanim włączy się Windows. Pozwala na zmianę podstawowych ustawień sprzętowych komputera, takich jak włączenie funkcji wirtualizacji, która jest potrzebna dla Docker Desktop.
@@ -67,19 +82,6 @@ Spróbuj zamknąć inne programy, które mogą obciążać komputer, np. przegl�
 
 3. Zrestartuj komputer i zacznij proces instalacji od nowa.
 
-
-## Wirtualizacja (Hyper-V/Windows Hypervisor Platform) jest wyłączona
-**Problem:** Docker nie może uruchomić maszyn wirtualnych.
-
-**Rozwiązanie:**
-
-1. Wyszukaj w menu Start "Włącz lub wyłącz funkcje systemu Windows".
-
-2. Zaznacz **Hyper-V** oraz **Windows Hypervisor Platform**.
-
-3. Zrestartuj komputer.
-
-To umożliwi Dockerowi korzystanie z wbudowanego hiperwizora Microsoftu.
 
 ## Problem z VPN, proxy (HTTP code 401, 500)
 **Problem:** Docker nie może połączyć się z serwerem `docker.io`
