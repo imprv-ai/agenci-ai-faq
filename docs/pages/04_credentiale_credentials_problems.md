@@ -8,6 +8,10 @@ tags:
   - Google Cloud Platform
   - Client Id
   - Client Secret
+  - OAuth
+  - Autoryzacja
+  - Incognito
+  - Błąd 401
 ---
 
 # **Rozwiązania problemów z credentials Google**
@@ -122,4 +126,46 @@ Jeśli masz niepotrzebne lub niedziałające credentials skonfigurowane w swoim 
 
 1. **Potwierdź usunięcie** - pojawi się okno dialogowe z pytaniem czy na pewno chcesz usunąć credentials. Kliknij przycisk **"Yes, delete"** aby potwierdzić usunięcie.
    ![](assets/credentials__remove__confirm_delete.png)
+
+## **Błąd autoryzacji OAuth: "Dostęp zablokowany" / "The OAuth client was not found"**
+
+Jeśli podczas próby autoryzacji z Google (Gmail, Google Drive, Google Sheets) widzisz komunikat o błędzie autoryzacji podobny do poniższego:
+
+![](assets/problems__google_oauth__access_blocked.png)
+
+### Przyczyna problemu:
+
+Problem najczęściej występuje gdy przeglądarka **automatycznie loguje się** na inne konto Google niż to, dla którego zostały skonfigurowane credentials w Google Cloud Platform. Może to się zdarzyć, gdy:
+
+1. Masz zalogowanych wiele kont Google w tej samej przeglądarce
+1. Przeglądarka automatycznie wybiera konto, które nie ma dostępu do skonfigurowanej aplikacji OAuth
+1. Credentials zostały utworzone dla jednego konta, a próbujesz autoryzować się z poziomu innego
+
+### Rozwiązanie:
+
+**Użyj trybu incognito (prywatnego) w przeglądarce:**
+
+1. **Skopiuj adres URL workflow** - skopiuj pełny adres workflow z paska adresu przeglądarki (np. `localhost:5678/workflow/C8y5bItiJVEBsXTABpH55433/48dc12`)
+   ![](assets/problems__google_oauth__copy_workflow_url.png)
+
+1. **Otwórz okno incognito** - otwórz nowe okno przeglądarki w trybie incognito/prywatnym:
+    - **Chrome**: Ctrl+Shift+N (Windows) lub Cmd+Shift+N (Mac)
+       ![](assets/problems__google_oauth__incognito_window.png)
+    - **Firefox**: Ctrl+Shift+P (Windows) lub Cmd+Shift+P (Mac)
+    - **Edge**: Ctrl+Shift+N (Windows)
+
+1. **Wklej adres workflow** - wklej skopiowany adres URL do paska adresu w nowym oknie incognito
+
+1. **Ponów autoryzację** - przejdź do swojego node'a (np. Gmail) i spróbuj ponownie wykonać autoryzację OAuth
+
+### Dlaczego to działa?
+
+Tryb incognito zapewnia "czystą sesję" bez wcześniej zapamiętanych danych logowania, co pozwala:
+
+   - Ręcznie wybrać właściwe konto Google
+   - Uniknąć automatycznego logowania na nieprawidłowe konto  
+   - Przeprowadzić autoryzację z poziomu konta, które ma dostęp do aplikacji OAuth
+
+!!! tip "Wskazówka"
+    Po pomyślnej autoryzacji w trybie incognito, możesz wrócić do zwykłego okna przeglądarki. Autoryzacja zostanie zapamiętana w n8n.
 
