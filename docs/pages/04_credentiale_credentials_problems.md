@@ -169,3 +169,39 @@ Tryb incognito zapewnia "czystą sesję" bez wcześniej zapamiętanych danych lo
 !!! tip "Wskazówka"
     Po pomyślnej autoryzacji w trybie incognito, możesz wrócić do zwykłego okna przeglądarki. Autoryzacja zostanie zapamiętana w n8n.
 
+## **Błąd przy pobieraniu zdjęcia z Google Drive: "Forbidden - perhaps check your credentials?"**
+
+![](assets/problems__google_drive__error_403.png)
+
+### Przyczyna problemu:
+
+Najczęstszą przyczyną tego błędu jest używanie **ID folderu** zamiast **ID konkretnego pliku** ze zdjęciem. Gdy kopiujesz link do zdjęcia bezpośrednio z Google Drive, często otrzymujesz link zawierający ID folderu, w którym znajduje się zdjęcie, a nie ID samego pliku.
+
+### Rozwiązanie:
+
+**Pobierz poprawne ID zdjęcia bezpośrednio z pliku:**
+
+1. **Otwórz plik zdjęcia w Google Drive** - znajdź swoje zdjęcie, a następnie:
+    - kliknij na trzy kropki
+    - wybierz opcję **"Share"**
+    - wybierz opcję **"Copy link"** (Kopiuj link)
+   ![](assets/problems__google_drive__open_image.png)
+
+1. **Wyciągnij ID pliku z linku** - skopiowany link będzie miał format podobny do:
+    ```
+    https://drive.google.com/file/d/12Vidu___________YxNGvBGd/view?usp=drive_link
+    ```
+    ![](assets/problems__google_drive__copy_link.png)
+
+    ID pliku to część między `/d/` a `/view` - w tym przypadku: `12Vjdu___________YxNGyBGdJ`
+
+1. **Użyj poprawnego ID w n8n** - wklej wyciągnięte ID do odpowiedniego pola w node'ie Google Drive
+
+### Dlaczego to działa?
+
+Google Drive wyróżnia różne typy obiektów (foldery, pliki, dokumenty), każdy z unikalnym ID.
+Używając poprawnego ID pliku, Google Drive może prawidłowo zidentyfikować zasób i udostępnić go zgodnie z ustawionymi uprawnieniami.
+
+!!! warning "Ważne"
+    Upewnij się, że plik ma odpowiednie uprawnienia dostępu (jest publiczny lub udostępniony dla Twojego konta Google używanego w credentials).
+
