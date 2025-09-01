@@ -6,6 +6,12 @@ tags:
     - Secret key
     - API key
     - Organization
+    - Weryfikacja
+    - gpt-image-1
+    - Persona
+    - Forbidden
+    - Credentials
+    - Błąd 403
 ---
 
 # **OpenAI - klucz API, logowanie**
@@ -76,3 +82,90 @@ Podczas tworzenia konta w platformie OpenAI konieczne jest skonfigurowanie nazwy
 1. Po wykonaniu tych kroków znajdziesz się na stronie głównej platformy OpenAI dla deweloperów, gdzie możesz zacząć korzystać z API.
 
     ![](assets/openai_api_credits.png)
+
+## **Błąd "Forbidden - perhaps check your credentials?" przy generowaniu obrazów z modelem gpt-image-1**
+
+Jeśli podczas próby generowania lub edytowania obrazów za pomocą modelu `gpt-image-1` otrzymujesz błąd podobny do poniższego:
+
+![](assets/openai__image_generation__error_forbidden.png)
+
+### Przyczyna problemu:
+
+Model `gpt-image-1` wymaga **zweryfikowanej organizacji** w OpenAI. Błąd `403 - Forbidden` z komunikatem o sprawdzeniu credentials wskazuje, że Twoja organizacja nie została jeszcze zweryfikowana przez OpenAI.
+
+### Rozwiązanie:
+
+**Krok 1: Rozpoczęcie procesu weryfikacji**
+
+- Przejdź do ustawień organizacji: [https://platform.openai.com/settings/organization/general](https://platform.openai.com/settings/organization/general)
+
+    ![](assets/openai__image_generation__verification_link.png)
+
+- W sekcji **"Verifications"** kliknij przycisk **"Verify Organization"**
+
+    ![](assets/openai__image_generation__verify_organization_button.png)
+
+**Krok 2: Weryfikacja tożsamości przez Persona**
+
+- Zostaniesz przekierowany do systemu weryfikacji Persona. Kliknij **"Start ID Check"**
+
+    ![](assets/openai__image_generation__persona_start_verification.png)
+
+- Zapoznaj się z informacjami o przetwarzaniu danych i zaznacz zgodę na przetwarzanie danych biometrycznych. Następnie kliknij **"Begin verifying"**
+
+    ![](assets/openai__image_generation__persona_consent.png)
+
+**Krok 3: Weryfikacja na urządzeniu mobilnym**
+
+- System wyświetli kod QR do skanowania telefonem. Zeskanuj kod aparatem telefonu
+
+    ![](assets/openai__image_generation__persona_qr_code.png)
+
+- Alternatywnie możesz kliknąć **"Send Email"** aby otrzymać link weryfikacyjny na email
+
+**Krok 4: Proces weryfikacji**
+
+### ⚠️ Informacje o bezpieczeństwie procesu weryfikacji
+
+!!! warning "Uwagi dotyczące bezpieczeństwa"
+    Proces weryfikacji wymaga podania wrażliwych danych osobowych:
+    
+    **Co będzie wymagane:**
+
+    - Zdjęcie dokumentu tożsamości (dowód osobisty, paszport lub prawo jazdy)
+    - Zdjęcie Twojej twarzy (selfie) w celu weryfikacji biometrycznej
+    - Podstawowe dane osobowe
+    
+    **Środki bezpieczeństwa:**
+
+    - OpenAI używa zewnętrznego dostawcy (Persona) do weryfikacji tożsamości
+    - Dane są przetwarzane zgodnie z polityką prywatności Persona i OpenAI
+    - Informacje biometryczne są przechowywane maksymalnie 7 dni zgodnie z polityką
+    
+    **Potencjalne ryzyka:**
+
+    - Przesyłanie dokumentów tożsamości przez internet zawsze niesie pewne ryzyko
+    - Dane mogą być wykorzystane przez OpenAI do innych celów zgodnie z ich polityką prywatności
+    - Brak możliwości cofnięcia weryfikacji po jej przeprowadzeniu
+
+!!! tip "Rekomendacje"
+    - Przeczytaj uważnie politykę prywatności przed rozpoczęciem weryfikacji
+    - Upewnij się, że korzystasz z oficjalnej strony OpenAI
+    - Rozważ czy korzystanie z modelu `gpt-image-1` jest niezbędne dla Twoich potrzeb
+    - W przypadku wątpliwości skonsultuj się z ekspertem ds. ochrony danych
+
+**Krok 5: Potwierdzenie weryfikacji**
+
+Po pomyślnym przejściu przez proces weryfikacji tożsamości, status Twojej organizacji zmieni się na **"Organization Verified"**
+
+![](assets/openai__image_generation__organization_verified.png)
+
+
+### Czas propagacji zmian
+
+!!! info "Ważne"
+    Po pomyślnej weryfikacji może upłynąć **do 15 minut** zanim dostęp do modelu `gpt-image-1` zostanie aktywowany. Jeśli po tym czasie nadal otrzymujesz błąd, spróbuj:
+    
+    1. Odświeżyć stronę platformy OpenAI
+    2. Sprawdzić status weryfikacji w ustawieniach organizacji
+    3. Skontaktować się z pomocą techniczną OpenAI jeśli problem persystuje
