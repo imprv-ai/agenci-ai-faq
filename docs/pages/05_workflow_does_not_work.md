@@ -212,3 +212,24 @@ Wymaga to zweryfikowania metody płatności i **zweryfikowania naszej tożsamoś
 
 
 
+## **Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada**
+
+### Problem:
+Uruchamiam workflow zgodnie z instrukcją z lekcji. Workflow się `kręci` i nie odpowiada lub po około minucie zwraca błąd.
+![](assets/postgres_trigger__not_responding__1.png)
+
+### Prawdopodobna przyczyna:
+1. Problem najprawdopodobniej wynika z wyboru typu połączenia z bazą danych.
+W lekcji poświęconej łączeniu `Postgres z n8n` zostało to wyjaśnione jak skonfigurować połączenie oparte o transakcje (`Transaction pooler`). Działanie `Triggerów` wymaga jednak połączenia opartego o sesje (`Session pooler`).
+Te 2 konfiguracje w `Supabase` różnią się jedynie `Portem` i to właśnie tę wartość należy zmienić, żeby rozwiązać problem.
+![](assets/postgres_trigger__not_responding__5.png)
+
+### Rozwiązanie:
+1. Otwórz dowolny node `Postgres Trigger`
+![](assets/postgres_trigger__not_responding__2.png)
+
+1. Kliknij w `Ołówek` w polu `Credentials to connect with`, żeby edytować dane dostępu do bazy danych.
+![](assets/postgres_trigger__not_responding__3.png)
+
+1. Zjedź na dół do pola `Port` i sprawdź czy jest tam wartość `5432`. Jeśli jest inny, to należy go zmienić na `5432`. 
+![](assets/postgres_trigger__not_responding__4.png)
