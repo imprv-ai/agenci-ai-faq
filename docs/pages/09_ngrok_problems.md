@@ -112,7 +112,7 @@ Pomocne jest wyłączenie wysyłania anonimowego ruchu diagnostycznego do n8n.
 
     !!! tip
         **Podpowiedź**  
-        Jeśli nie pamiętasz jak tworzyć kontener n8n od zera wróć do lekcji [Uruchamiany n8n z Docker Desktop](https://app.imprv.ai/assignments?taskEntityId=c780f2e3-7b9d-44e6-8923-762730eefa87)
+        Jeśli nie pamiętasz jak tworzyć kontener n8n od zera wróć do lekcji [Uruchamiamy n8n z Docker Desktop](https://app.imprv.ai/assignments?taskEntityId=c780f2e3-7b9d-44e6-8923-762730eefa87)
 
         **LUB**
 
