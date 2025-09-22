@@ -121,7 +121,7 @@ Pomocne jest wyłączenie wysyłania anonimowego ruchu diagnostycznego do n8n.
 
 
 
-### Co jeśli już przekroczyłam/łem limit?
-- **Utwórz nowe darmowe konto ngrok**: Jeśli osiągnięty limit blokuje dalszą naukę, rozważ utworzenie nowego darmowego konta ngrok na inny adres email. Pamiętaj o ustawieniu zmiennej środowiskowej `N8N_DIAGNOSTICS_ENABLED` na `false`, żeby problem się nie powtórzył.
+### Co jeśli już przekroczyłam/przekroczyłem limit?
+- **Utwórz nowe darmowe konto ngrok**: Jeśli osiągnięty limit blokuje dalszą naukę, rozważ utworzenie nowego darmowego konta ngrok na inny adres e-mail. Pamiętaj o ustawieniu zmiennej środowiskowej `N8N_DIAGNOSTICS_ENABLED` na `false`, żeby problem się nie powtórzył.
 
 - **Zaczekaj na reset limitu**: Wstrzymaj ruch do tunelu (czyli zamknij publiczne udostępnienia - kontener ngrok) i poczekaj do resetu limitu w kolejnym cyklu rozliczeniowym (widoczny w prawym górnym rogu strony `Usage` - zazwyczaj jest to kolejny miesiąc).
