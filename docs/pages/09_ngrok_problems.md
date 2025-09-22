@@ -93,8 +93,30 @@ docker run -it -d --name ngrok -p 4040:4040 -e NGROK_AUTHTOKEN=123secret123secre
 
 - Limit zapytań zależy od planu. W planie darmowym można go przekroczyć podczas testów lub gdy z aplikacji korzysta wielu użytkowników/botów.
 
+
+### Prawdopodobna przyczyna
+Po uruchomieniu kontenera z ngrok, przechwytuje on również anonimowy ruch diagnostyczny przesyłany do n8n.
+
 ### Jak to naprawić?
 
-- **Szybkie obejście (tymczasowe)**: Wstrzymaj ruch do tunelu (czyli zamknij publiczne udostępnienia - kontener ngrok) i poczekaj do resetu limitu w kolejnym cyklu rozliczeniowym (widoczny w prawym górnym rogu strony `Usage` - zazwyczaj jest to kolejny miesiąc).
+Pomocne jest wyłączenie wysyłania anonimowego ruchu diagnostycznego do n8n.
+Żeby to zrobić należy ustawić zmienną środowiskową `N8N_DIAGNOSTICS_ENABLED` na wartość `false`.
 
-- **Alternatywa**: Postaw n8n zdalnie w jakimś serwisie chmurowym (np. n8n Cloud, Railway, DigitalOcean, AWS, itp.) - w ten sposób unikniesz problemów z tunelowaniem. Sposób zdalnego wdrożenia n8n uczymy się w **Module 5**.
+**Kroki:**
+
+1. Usuń istniejący kontener n8n z Docker Desktop
+1. Uruchom nowy kontener n8n z **dodatkową** zmienną środowiskową `N8N_DIAGNOSTICS_ENABLED` ustawioną na `false`
+
+!!! tip
+    **Podpowiedź 1:**  
+    Możesz też wrócić do lekcji [Uruchamiany n8n z Docker Desktop](https://app.imprv.ai/assignments?taskEntityId=c780f2e3-7b9d-44e6-8923-762730eefa87)
+
+!!! tip
+    **Podpowiedź 2:**  
+    Jeśli nie pamiętasz jak tworzyć kontener n8n od zera zerknij na ten przykład z `WEBHOOK_URL`
+    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
+
+### Co jeśli już przekroczyłam/łem limit?
+- **Zaczekaj na reset limitu**: Wstrzymaj ruch do tunelu (czyli zamknij publiczne udostępnienia - kontener ngrok) i poczekaj do resetu limitu w kolejnym cyklu rozliczeniowym (widoczny w prawym górnym rogu strony `Usage` - zazwyczaj jest to kolejny miesiąc).
