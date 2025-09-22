@@ -102,19 +102,22 @@ Po uruchomieniu kontenera z ngrok, przechwytuje on również anonimowy ruch dia
 Pomocne jest wyłączenie wysyłania anonimowego ruchu diagnostycznego do n8n.
 Żeby to zrobić należy ustawić zmienną środowiskową `N8N_DIAGNOSTICS_ENABLED` na wartość `false`.
 
+Źródła:
+- [Dokumentacja n8n](https://docs.n8n.io/hosting/securing/telemetry-opt-out/#data-collection)
+
 **Kroki:**
 
 1. Usuń istniejący kontener n8n z Docker Desktop
 1. Uruchom nowy kontener n8n z **dodatkową** zmienną środowiskową `N8N_DIAGNOSTICS_ENABLED` ustawioną na `false`
 
-!!! tip
-    **Podpowiedź 1:**  
-    Możesz też wrócić do lekcji [Uruchamiany n8n z Docker Desktop](https://app.imprv.ai/assignments?taskEntityId=c780f2e3-7b9d-44e6-8923-762730eefa87)
+    !!! tip
+        **Podpowiedź**  
+        Jeśli nie pamiętasz jak tworzyć kontener n8n od zera wróć do lekcji [Uruchamiany n8n z Docker Desktop](https://app.imprv.ai/assignments?taskEntityId=c780f2e3-7b9d-44e6-8923-762730eefa87)
 
-!!! tip
-    **Podpowiedź 2:**  
-    Jeśli nie pamiętasz jak tworzyć kontener n8n od zera zerknij na ten przykład z `WEBHOOK_URL`
-    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        **LUB**
+
+        Zerknij na ten przykład z `WEBHOOK_URL`
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 
 
