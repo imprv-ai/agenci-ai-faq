@@ -1,0 +1,1179 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które napotykają uczestnicy kursu `Agenci AI`.">
+      
+      
+        <meta name="author" content="IMPRV.ai dev team and supporters">
+      
+      
+        <link rel="canonical" href="https://imprv-ai.github.io/agenci-ai-faq/pages/06_telegram_problems/">
+      
+      
+        <link rel="prev" href="../05_workflow_does_not_work/">
+      
+      
+        <link rel="next" href="../07_imprv_problems/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Rozwiązania problemów z połączeniem n8n z Telegramem - FAQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rozwiazania-problemow-z-poaczeniem-n8n-z-telegramem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FAQ" class="md-header__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FAQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rozwiązania problemów z połączeniem n8n z Telegramem
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FAQ" class="md-nav__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FAQ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ dla kursu Agenci AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jak zacząć pracę z kursem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_open_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI - klucz API, logowanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_credentiale_credentials_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credentials - rozwiązania problemów i dodatkowe poradniki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_workflow_does_not_work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązywanie problemów z workflowami z lekcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z połączeniem n8n z Telegramem
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z połączeniem n8n z Telegramem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#poaczenie-workflow-z-botem-w-telegramie-nie-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Połączenie workflow z botem w Telegramie nie działa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-zgasza-bad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trigger do nasłuchiwania na wiadomości z Telegrama zgłasza błąd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-nie-reaguje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trigger do nasłuchiwania na wiadomości z Telegrama nie reaguje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node SWITCH
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-telegram-get-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node Telegram Get File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wersja-web-k-kontra-web-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wersja Web K kontra Web A
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pojawia-sie-bad-bad-reguest-chat-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pojawia się błąd Bad Reguest: chat not found
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_imprv_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z działaniem aplikacji imprv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reset_password_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z loginem i hasłem do n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_ngrok_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z ngrok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_deployment_informations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wdrażanie N8N na zdalnym serwerze – dodatkowe informacje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_charts_and_sql_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow do generowania wykresów i wyszukiwania danych - SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_update_n8n_in_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aktualizacja n8n w Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_evaluation_activation_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N8N Evaluations – aktywacja w n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_linkedin_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy z LinkedIn OAuth Redirect URL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_mcp_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pytania i problemy związane z MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#poaczenie-workflow-z-botem-w-telegramie-nie-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Połączenie workflow z botem w Telegramie nie działa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-zgasza-bad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trigger do nasłuchiwania na wiadomości z Telegrama zgłasza błąd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-nie-reaguje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trigger do nasłuchiwania na wiadomości z Telegrama nie reaguje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node SWITCH
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-telegram-get-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node Telegram Get File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wersja-web-k-kontra-web-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wersja Web K kontra Web A
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pojawia-sie-bad-bad-reguest-chat-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pojawia się błąd Bad Reguest: chat not found
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Moduł 3</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Telegram</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Workflow</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">bot</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">chat not found</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="rozwiazania-problemow-z-poaczeniem-n8n-z-telegramem"><strong>Rozwiązania problemów z połączeniem n8n z Telegramem</strong><a class="headerlink" href="#rozwiazania-problemow-z-poaczeniem-n8n-z-telegramem" title="Permanent link">&para;</a></h1>
+<h2 id="poaczenie-workflow-z-botem-w-telegramie-nie-dziaa"><strong>Połączenie workflow z botem w Telegramie nie działa</strong><a class="headerlink" href="#poaczenie-workflow-z-botem-w-telegramie-nie-dziaa" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Na stronie Telegrama w adresie www przeglądarki jest numer, który potrzebujemy jako Chat ID.
+   <img alt="" src="../assets/workflows__telegram_1.png" /></li>
+<li>Są przypadki, że ten numer nie ma na początku <code>-100</code>. Wtedy do skopiowanego numeru należy taki początek dodać ręcznie.
+   <img alt="" src="../assets/workflows__telegram_2.png" /></li>
+</ol>
+<h2 id="trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-zgasza-bad"><strong>Trigger do nasłuchiwania na wiadomości z Telegrama zgłasza błąd</strong><a class="headerlink" href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-zgasza-bad" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Uruchamiam workflow, w którym mam node nasłuchujący na Telegram i mam taki błąd
+   <img alt="" src="../assets/workflow__telegram__webhook.png" /></p>
+</li>
+<li>
+<p>Należy ustawić zmienną środowiskową <code>WEBHOOK_URL</code> i jej wartość ustawić na domenę, którą mamy z <code>ngrok</code></p>
+</li>
+</ol>
+<p><strong>WAŻNE!</strong> : wartość którą wpisujemy powinna mieć postać <code>https://TWOJA_DOMENA_NGROK</code>
+ <br />
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b0fb4aa94f90493da164214e88ee1c07?sid=e86d29a8-2a97-4b11-840f-2bea0575d1a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+</p>
+<h2 id="trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-nie-reaguje"><strong>Trigger do nasłuchiwania na wiadomości z Telegrama nie reaguje</strong><a class="headerlink" href="#trigger-do-nasuchiwania-na-wiadomosci-z-telegrama-nie-reaguje" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Uruchamiam workflow z <code>Triggerem Telegrama</code>. Trigger się kręci i nie reaguje na moje wiadomości</p>
+</li>
+<li>
+<p>W pierwszej kolejności sprawdź czy masz poprawnie ustawiony <code>WEBHOOK_URL</code> w zmiennych środowiskowych. Możesz to sprawdzić w zakładce <code>Env</code> w ustawieniach kontenera <code>n8n</code>. Instrukcja jak to zrobić znajduje się tutaj. <a href="../02_docker_desktop/#jak-sprawdzic-ustawienia-kontenera-docker-desktop">Kliknij</a></p>
+</li>
+</ol>
+<p>Należy tam szukać linijki <code>WEBHOOK_URL=https://twoja-domena-z-ngrok.free.app</code>. <strong>To bardzo ważne żeby na początku było <code>https://</code></strong>
+   <img alt="" src="../assets/problems__telegram__webhook_1.png" /></p>
+<ol>
+<li>
+<p>Jeśli masz tam taką wartość, to sprawdź czy Twój kontener <code>ngrok</code> jest prawidłowo uruchomiony
+W tym celu otwórz stronę <code>localhost:4040/status</code>. Jest to strona kontenera <code>ngrok</code> uruchomionego na Twoim komputerze.</p>
+</li>
+<li>
+<p>Jeśli strona się nie wyświetla. To znaczy, że kontener ngrok nie jest uruchomiony i należy go uruchomić
+   <img alt="" src="../assets/problems__telegram__webhook_2.png" /></p>
+</li>
+<li>
+<p>Jeśli <code>ngrok</code> jest prawidłowo uruchomiony to zobaczysz stronę statusu
+   <img alt="" src="../assets/problems__telegram__webhook_3.png" />
+   Porównaj jeszcze raz wartość pola <code>URL</code> z tym co masz w <code>WEBHOOK_URL</code></p>
+</li>
+</ol>
+<h2 id="przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-switch"><strong>Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node SWITCH</strong><a class="headerlink" href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-switch" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Kiedy wysyłam zdjęcie, node SWITCH pokazuje taki problem
+   <img alt="" src="../assets/workflow__telegram__photo_1.png" /></p>
+</li>
+<li>
+<p>Zwróć uwagę, żeby w <code>Routing Rules</code> w typie porównania wybrać <code>Array</code>, a następnie <code>exists</code>
+   <img alt="" src="../assets/workflow__telegram__photo_2.png" />
+   <img alt="" src="../assets/workflow__telegram__photo_3.png" /></p>
+</li>
+</ol>
+<h2 id="przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-telegram-get-file"><strong>Przesyłanie zdjęcia przez Telegram do agenta nie działa. Zatrzymuje się na node Telegram Get File</strong><a class="headerlink" href="#przesyanie-zdjecia-przez-telegram-do-agenta-nie-dziaa-zatrzymuje-sie-na-node-telegram-get-file" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/problems__telegram__photo_1.png" />
+   <img alt="" src="../assets/problems__telegram__photo_2.png" /></p>
+<ol>
+<li>
+<p>Tak się dzieje dlatego, że w zależności od tego jakiej jakości zdjęcie wyślemy, tyle "kopii" zdjęcia przesyła nam telegram w danej wiadomości.
+Jeśli przesyłamy zdjęcie słabej jakości to otrzymamy do 2 elementów
+Jeśli przesyłamy zdjęcie wysokiej jakości to otrzymamy od 3 elementów
+Wartość 3 została zaproponowana w lekcji dlatego, że dla dużych zdjęć ta jakość jest wystarczająco dobra żeby uzyskać satysfakcjonujące efekty.</p>
+</li>
+<li>
+<p>Żeby wrokflow zawsze brał zdjęcie najwyższej jakości, niezależnie od rozmiaru zdjęcia przesłanego przez telegram
+<strong>należy zmienić wartość w polu <code>File ID</code> na <code>{{ $json.channel_post.photo.last().file_id }}</code></strong></p>
+</li>
+</ol>
+<h2 id="wersja-web-k-kontra-web-a"><strong>Wersja Web K kontra Web A</strong><a class="headerlink" href="#wersja-web-k-kontra-web-a" title="Permanent link">&para;</a></h2>
+<p>Telegram oferuje dwie totalnie niezależne wersje swojej aplikacji webowej (czyli tej którą uruchamiamy w przeglądarce).</p>
+<p>Wersje te różnią się pod pewnymi względami. Rekomendujemy użycie tzw. wersji <code>Web A</code> dostępnej pod adresem <a href="https://web.telegram.org/a/">https://web.telegram.org/a/</a></p>
+<blockquote>
+<p>UWAGA: Wpisanie w przegladarke <a href="https://web.telegram.org">https://web.telegram.org</a> pozwoli telegramowi lub / i przeglądarce na wybranie wersji. Wówczas wasza przeglądarka może wymuszać cały czas wersję <code>/k</code>. Dopiero wskazanie na <a href="https://web.telegram.org/a">https://web.telegram.org/a</a> przekierowuje na wersję <code>Web A</code>.</p>
+</blockquote>
+<p>Wersja <code>Web A</code> jest wolna od wielu problemów, zwłaszcza w zarządaniu botami i administratorami.</p>
+<p>Dodatkowo wszystkie nasze lekcje dotyczące Telegrama są stworzone w oparciu o wersję <code>Web A</code>.</p>
+<p>Jeżeli nie wiesz na jakiej wersji pracujesz, to możesz to sprawdzić w adresie URL w przeglądarce, albo:</p>
+<p><img alt="" src="../assets/problems__telegram__wersja_web_a.png" /></p>
+<h2 id="pojawia-sie-bad-bad-reguest-chat-not-found"><strong>Pojawia się błąd Bad Reguest: chat not found</strong><a class="headerlink" href="#pojawia-sie-bad-bad-reguest-chat-not-found" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/workflow__telegram__bad_request.png" />
+   <img alt="" src="../assets/workflow__telegram__chat_not_found.png" /></p>
+<p>Jeśli nawet po sprawdzeniu poprawności <code>Chat ID</code> i <code>tokena</code> błąd nadal występuje, to być może mamy podłączonego jakiegoś obcego lub niepoprawnego bota jako administratora naszego czata.</p>
+<ol>
+<li>
+<p>Należy uważać już w momencie wyszukiwania <code>BotFather</code>. Najlepiej wpisz pełną nazwę i wybierz tylko bota, który:</p>
+<ul>
+<li>ma dokładnie taką nazwę,</li>
+<li>jest oznaczony jako oficjalny bot Telegrama (znaczek w kółku),</li>
+<li>posiada dużą liczbę użytkowników – w chwili tworzenia tego obrazka było to ponad 3,5 miliona użytkowników.
+<img alt="" src="../assets/workflow__telegram__botfather.png" /></li>
+</ul>
+</li>
+<li>
+<p>Trzeba zapisać lub zapamiętać dokładny <code>username</code> tworzonego bota - on jest unikatowy dla całego Telegrama i według tej nazwy będziemy potem przypinać bota jako administratora do naszego kanału w Telegramie.
+<img alt="" src="../assets/workflow__telegram__new_bot.png" /></p>
+</li>
+<li>
+<p>Podczas podłączania bota jako administratora do naszego kanału należy zachować ostrożność i wpisywać do wyszukiwarki pełny <code>@username</code> naszego bota.
+<img alt="" src="../assets/workflow__telegram__add_admin.png" /></p>
+</li>
+</ol>
+<p>Po dodaniu bota w powyższy sposób i podłączeniu go do naszego czata oraz po ponownym uzupełnieniu <code>Chat ID</code> i <code>tokena</code> w n8n workflow powinien działać i nie zgłaszać błędu <code>chat not found</code>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

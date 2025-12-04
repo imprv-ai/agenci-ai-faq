@@ -1,0 +1,1605 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które napotykają uczestnicy kursu `Agenci AI`.">
+      
+      
+        <meta name="author" content="IMPRV.ai dev team and supporters">
+      
+      
+        <link rel="canonical" href="https://imprv-ai.github.io/agenci-ai-faq/pages/05_workflow_does_not_work/">
+      
+      
+        <link rel="prev" href="../04_credentiale_credentials_problems/">
+      
+      
+        <link rel="next" href="../06_telegram_problems/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Rozwiązywanie problemów z workflowami z lekcji - FAQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rozwiazywanie-problemow-z-workflowami-z-lekcji" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FAQ" class="md-header__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FAQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rozwiązywanie problemów z workflowami z lekcji
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FAQ" class="md-nav__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FAQ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ dla kursu Agenci AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jak zacząć pracę z kursem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_open_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI - klucz API, logowanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_credentiale_credentials_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credentials - rozwiązania problemów i dodatkowe poradniki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązywanie problemów z workflowami z lekcji
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązywanie problemów z workflowami z lekcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-danych-klientow-z-formularza-nie-dziaa-google-sheet-dane-klientow-nie-widzi-document-i-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem danych klientów z formularza nie działa - Google Sheet ( Dane Klientów ) nie widzi Document i Sheet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU WINDOWS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU macOS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-moduu-agentka-elzbieta-nie-widze-opcji-w-nodzie-gmail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie Gmail
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-moduu-agentka-elzbieta-nie-widze-zakadki-binary-w-nodzie-gmail-po-pobraniu-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie Gmail po pobraniu danych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generowanie-zdjecia-w-module-o-adamie-marketingowcu-nie-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generowanie zdjęcia w module o Adamie Marketingowcu nie działa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-bad-bad-request-please-check-your-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa - błąd "Bad request - please check your parameters"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa - błąd &#34;Bad request - please check your parameters&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dozwolone-znaki-w-nazwach-nodeow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dozwolone znaki w nazwach node'ów:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#niedozwolone-znaki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Niedozwolone znaki:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-google-docs-node-bad-bad-request-please-check-your-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa: Google Docs node - błąd "Bad request - please check your parameters"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa: Google Docs node - błąd &#34;Bad request - please check your parameters&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-workflow-nasuchujacy-na-zmiany-w-bazie-danych-postgres-supabase-nie-odpowiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prawdopodobna-przyczyna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prawdopodobna przyczyna:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_telegram_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z połączeniem n8n z Telegramem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_imprv_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z działaniem aplikacji imprv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reset_password_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z loginem i hasłem do n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_ngrok_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z ngrok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_deployment_informations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wdrażanie N8N na zdalnym serwerze – dodatkowe informacje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_charts_and_sql_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow do generowania wykresów i wyszukiwania danych - SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_update_n8n_in_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aktualizacja n8n w Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_evaluation_activation_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N8N Evaluations – aktywacja w n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_linkedin_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy z LinkedIn OAuth Redirect URL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_mcp_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pytania i problemy związane z MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-danych-klientow-z-formularza-nie-dziaa-google-sheet-dane-klientow-nie-widzi-document-i-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem danych klientów z formularza nie działa - Google Sheet ( Dane Klientów ) nie widzi Document i Sheet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU WINDOWS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU macOS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-moduu-agentka-elzbieta-nie-widze-opcji-w-nodzie-gmail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie Gmail
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-z-moduu-agentka-elzbieta-nie-widze-zakadki-binary-w-nodzie-gmail-po-pobraniu-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie Gmail po pobraniu danych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generowanie-zdjecia-w-module-o-adamie-marketingowcu-nie-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generowanie zdjęcia w module o Adamie Marketingowcu nie działa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-bad-bad-request-please-check-your-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa - błąd "Bad request - please check your parameters"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa - błąd &#34;Bad request - please check your parameters&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dozwolone-znaki-w-nazwach-nodeow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dozwolone znaki w nazwach node'ów:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#niedozwolone-znaki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Niedozwolone znaki:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-google-docs-node-bad-bad-request-please-check-your-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa: Google Docs node - błąd "Bad request - please check your parameters"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa: Google Docs node - błąd &#34;Bad request - please check your parameters&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-nie-dziaa-workflow-nasuchujacy-na-zmiany-w-bazie-danych-postgres-supabase-nie-odpowiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prawdopodobna-przyczyna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prawdopodobna przyczyna:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Adam Marketingowiec</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Dane klientów</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Elżbieta</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Generowanie grafiki</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Google Sheet</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Local File Trigger</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Node</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Workflow</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="rozwiazywanie-problemow-z-workflowami-z-lekcji"><strong>Rozwiązywanie problemów z workflowami z lekcji</strong><a class="headerlink" href="#rozwiazywanie-problemow-z-workflowami-z-lekcji" title="Permanent link">&para;</a></h1>
+<h2 id="workflow-z-czytaniem-danych-klientow-z-formularza-nie-dziaa-google-sheet-dane-klientow-nie-widzi-document-i-sheet"><strong>Workflow z czytaniem danych klientów z formularza nie działa - Google Sheet ( Dane Klientów ) nie widzi Document i Sheet</strong><a class="headerlink" href="#workflow-z-czytaniem-danych-klientow-z-formularza-nie-dziaa-google-sheet-dane-klientow-nie-widzi-document-i-sheet" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli masz podświetlone na czerwono pola <strong>Document</strong> i <strong>Sheet</strong>
+   <img alt="" src="../assets/workflows__client_data__1.png" /></p>
+</li>
+<li>
+<p>W pierwszej kolejności upewnij się, że masz wypełnione pole <code>Credentials to connect with</code>
+   <img alt="" src="../assets/workflows__client_data__2.png" /></p>
+</li>
+<li>
+<p>Jeśli pole jest wypełnione, czyli dane dostępu ( Credentials ) są podpięte, kliknij w <code>Choose...</code> w polu <strong>Document</strong>
+Jeśli lista jest pusta, oznacza to, że podpięte dane dostępu ( Credentials ) są poprawne, ale najprowdopodobniej nie masz jeszcze żadnego utworzonego <code>Arkusza Google ( Google Sheet )</code></p>
+</li>
+<li>
+<p>W takiej sytuacji wejdź na stronę <a href="https://workspace.google.com/products/sheets/">Google Sheet (kliknij, żeby otworzyć stronę)</a></p>
+</li>
+<li>
+<p>Następnie zaloguj się
+   <img alt="" src="../assets/workflows__client_data__3.png" /></p>
+</li>
+<li>
+<p>Kliknij znak <strong>+ Blank spreadsheet ( Pusty arkusz)</strong>, aby utworzyć nowy arkusz ( google sheet )
+   <img alt="" src="../assets/workflows__client_data__4.png" /></p>
+</li>
+<li>
+<p>Kliknij dwukrotnie we wskazane miejsca żeby zmienić nazwę dokumentu (Document), nazwę arkusza (Sheet) oraz aby wstawić nazwy kolumn
+   <img alt="" src="../assets/workflows__client_data__5.png" /></p>
+</li>
+<li>
+<p>Po wypełnieniu powinno to wyglądać tak
+   <img alt="" src="../assets/workflows__client_data__6.png" /></p>
+</li>
+<li>
+<p>Następnie wróć do <strong>n8n</strong> i w nodzie <code>Dane Klientów ( Google Sheet)</code> kliknij w pole <strong>Document</strong>. Powinien się tam pojawić dokument, który właśnie został utworzony
+   <img alt="" src="../assets/workflows__client_data__7.png" /></p>
+</li>
+<li>
+<p>Następnie w polu <strong>Sheet</strong> wybierz nazwę arkusza w tym dokumencie. W przykładzie nazywał on się <code>Dane</code> 
+   <img alt="" src="../assets/workflows__client_data__8.png" /></p>
+</li>
+<li>
+<p>Po wykonaniu tej operacji pojawią się pola o takich nazwach jak kolumny w naszym utworzonym dokumencie
+   <img alt="" src="../assets/workflows__client_data__9.png" /></p>
+</li>
+</ol>
+<h2 id="workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-windows"><strong>Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU WINDOWS)</strong><a class="headerlink" href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-windows" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli pracujesz na systemie Windows i masz podpięty prawidłowo wolumen do folderu <code>pliki_n8n</code>, a Local Files Trigger nie reaguje
+   <img alt="" src="../assets/workflows__local_files_example_1.png" /></p>
+</li>
+<li>
+<p>Kliknij dwukrotnie w node <code>Local File Trigger</code>
+   <img alt="" src="../assets/workflows__local_files_example_2.png" /></p>
+</li>
+<li>
+<p>Kliknij w <code>Add Option</code>
+   <img alt="" src="../assets/workflows__local_files_example_3.png" /></p>
+</li>
+<li>
+<p>Z listy wybierz <code>Use Polling</code>
+   <img alt="" src="../assets/workflows__local_files_example_4.png" /></p>
+</li>
+<li>
+<p>Kliknij w suwak tak, żeby się zaświecił na zielono
+   <img alt="" src="../assets/workflows__local_files_example_5.png" /></p>
+</li>
+<li>
+<p>Powtórz test, przenosząc plik ze zdjęciem do folderu, i teraz powinno działać
+    <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/VNyzU-CtOAw?si=xKw39F_Wl0PNxz4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></p>
+</li>
+<li>
+<p>Jeśli wciąż nie działa, <strong>usuń kontener</strong> i spróbuj ponownie, uważając podczas <strong>ustawiania katalogów</strong>.
+   <img alt="" src="../assets/workflows__delete_container.png" /></p>
+</li>
+<li>
+<p>Po usunięciu kontenera przejdź do obrazów <code>Images</code> i uruchom obraz trójkątnym przyciskiem <code>Run</code>
+   <img alt="" src="../assets/workflows__run_image.png" /></p>
+</li>
+<li>
+<p>Pokaże się okno <code>Run a new container</code>, rozwiń zakładkę <code>Optional settings</code> i wypełnij wszystkie pola zgodnie ze schematem:</p>
+<ul>
+<li>najpierw dodaj jako <strong>pierwszy wolumen</strong> ten, który już istniał (pod tymi samymi ścieżkami co wcześniej)</li>
+<li>jako <strong>drugi wolumen</strong> podepnij ten nowy folder na dodawanie plików
+  <img alt="" src="../assets/workflows__directories.png" /></li>
+</ul>
+</li>
+<li>
+<p>Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce <code>Containers</code> kliknij na nazwę kontenera, a następnie w zakładkę <code>Bind mounts</code>:
+   <img alt="" src="../assets/workflows__directories_1.png" /></p>
+</li>
+<li>Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
+   <img alt="" src="../assets/workflows__directories_2.png" /></li>
+</ol>
+<h2 id="workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-macos"><strong>Workflow z czytaniem lokalnych plików nie działa - Local Files Trigger nie reaguje (WERSJA DLA SYSTEMU macOS)</strong><a class="headerlink" href="#workflow-z-czytaniem-lokalnych-plikow-nie-dziaa-local-files-trigger-nie-reaguje-wersja-dla-systemu-macos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli pracujesz na systemie macOS i masz podpięty prawidłowo wolumen do folderu <code>pliki_n8n</code>, a Local Files Trigger nie reaguje
+   <img alt="" src="../assets/workflows__local_files_example_1.png" /></p>
+</li>
+<li>
+<p>Kliknij dwukrotnie w node <code>Local File Trigger</code>
+   <img alt="" src="../assets/workflows__local_files_example_2.png" /></p>
+</li>
+<li>
+<p>Upewnij się, że suwak <code>Use Polling</code> nie jest zaznaczony i jest na szaro
+   <img alt="" src="../assets/workflows__local_files_example_6.png" /></p>
+</li>
+<li>
+<p>Powtórz test, przenosząc plik ze zdjęciem do folderu, i teraz powinno działać
+    <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/VNyzU-CtOAw?si=xKw39F_Wl0PNxz4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></p>
+</li>
+<li>
+<p>Jeśli wciąż nie działa, <strong>usuń kontener</strong> i spróbuj ponownie, uważając podczas <strong>ustawiania katalogów</strong>.
+   <img alt="" src="../assets/workflows__delete_container.png" /></p>
+</li>
+<li>
+<p>Po usunięciu kontenera przejdź do obrazów <code>Images</code> i uruchom obraz trójkątnym przyciskiem <code>Run</code>
+   <img alt="" src="../assets/workflows__run_image.png" /></p>
+</li>
+<li>
+<p>Pokaże się okno <code>Run a new container</code>, rozwiń zakładkę <code>Optional settings</code> i wypełnij wszystkie pola zgodnie ze schematem:</p>
+<ul>
+<li>najpierw dodaj jako <strong>pierwszy wolumen</strong> ten, który już istniał (pod tymi samymi ścieżkami co wcześniej)</li>
+<li>jako <strong>drugi wolumen</strong> podepnij ten nowy folder na dodawanie plików
+  <img alt="" src="../assets/workflows__directories.png" /></li>
+</ul>
+</li>
+<li>
+<p>Aby sprawdzić, czy wszystko zrobiliśmy dobrze, w zakładce <code>Containers</code> kliknij na nazwę kontenera, a następnie w zakładkę <code>Bind mounts</code>:
+   <img alt="" src="../assets/workflows__directories_1.png" /></p>
+</li>
+<li>Tutaj powinny być widoczne dwa foldery. Pierwszy na dane n8n, a drugi do przekazywania plików do workflow. 
+   <img alt="" src="../assets/workflows__directories_2.png" /></li>
+</ol>
+<h2 id="workflow-z-moduu-agentka-elzbieta-nie-widze-opcji-w-nodzie-gmail"><strong>Workflow z modułu Agentka Elżbieta - nie widzę opcji w nodzie Gmail</strong><a class="headerlink" href="#workflow-z-moduu-agentka-elzbieta-nie-widze-opcji-w-nodzie-gmail" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Klikam w node Gmail i nie widzę opcji, które pokazane były na lekcji
+   <img alt="" src="../assets/workflow_elzbieta__gmail_1.png" /></p>
+</li>
+<li>
+<p>Żeby naprawić ten problem, należy odznaczyć <code>Simplify</code> (tak, żeby było nieaktywne i nie świeciło się na zielono)
+   <img alt="" src="../assets/workflow_elzbieta__gmail_2.png" /></p>
+</li>
+<li>
+<p>Po deaktywacji <code>Simplify</code> będziemy mogli dodać opcje (np. <code>Download attachments</code>)
+   <img alt="" src="../assets/workflow_elzbieta__gmail_3.png" /></p>
+</li>
+</ol>
+<h2 id="workflow-z-moduu-agentka-elzbieta-nie-widze-zakadki-binary-w-nodzie-gmail-po-pobraniu-danych"><strong>Workflow z modułu Agentka Elżbieta - nie widzę zakładki Binary w nodzie Gmail po pobraniu danych</strong><a class="headerlink" href="#workflow-z-moduu-agentka-elzbieta-nie-widze-zakadki-binary-w-nodzie-gmail-po-pobraniu-danych" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Po pobraniu testowego maila z załącznikami nie widzę zakładki <code>Binary</code> w sekcji <code>Output</code>
+   <img alt="" src="../assets/workflow_elzbieta__gmail_no_binary_1.png" /></p>
+</li>
+<li>
+<p>Zakładka Binary widoczna jest jedynie w sytuacji, gdy pobrane zostaną pliki. Node nie pobierze plików, jeżeli nie zaznaczymy opcji <code>Download attachments</code>. Należy zatem zaznaczyć tę opcję i ponownie pobrać dane.
+   <img alt="" src="../assets/workflow_elzbieta__gmail_no_binary_2.png" /></p>
+</li>
+</ol>
+<h2 id="generowanie-zdjecia-w-module-o-adamie-marketingowcu-nie-dziaa"><strong>Generowanie zdjęcia w module o Adamie Marketingowcu nie działa</strong><a class="headerlink" href="#generowanie-zdjecia-w-module-o-adamie-marketingowcu-nie-dziaa" title="Permanent link">&para;</a></h2>
+<p>Wyświetla się taki błąd:</p>
+<p><img alt="" src="../assets/openai__image_gen__verification.png" /></p>
+<ol>
+<li>
+<p>Błąd informuje nas o tym, że żeby użyć modelu <code>gpt-image-1</code> musimy zweryfikować naszą organizację w OpenAI.
+Wymaga to zweryfikowania metody płatności i <strong>zweryfikowania naszej tożsamości</strong>.</p>
+</li>
+<li>
+<p>Następnie należy przejść do strony <a href="https://platform.openai.com">OpenAI</a> i wybrać ustawienia organizacji.
+   <img alt="" src="../assets/openai__image_gen__verification_0.png" /></p>
+</li>
+<li>
+<p>Następnie należy kliknąć w <code>Verify Organization</code>
+   <img alt="" src="../assets/openai__image_gen__verification_1.png" /></p>
+</li>
+<li>
+<p>Następnie należy kliknąć w <code>Start ID Check</code> i podążać za dalszymi instrukcjami.
+   <img alt="" src="../assets/openai__image_gen__verification_2.png" /></p>
+</li>
+<li>
+<p>Po zweryfikowaniu naszej tożsamości, możemy ponownie spróbować wygenerować zdjęcie.
+   Tak wygląda strona po zweryfikowaniu naszej tożsamości
+   <img alt="" src="../assets/openai__image_gen__verification_3.png" /></p>
+</li>
+</ol>
+<h2 id="workflow-nie-dziaa-bad-bad-request-please-check-your-parameters"><strong>Workflow nie działa - błąd "Bad request - please check your parameters"</strong><a class="headerlink" href="#workflow-nie-dziaa-bad-bad-request-please-check-your-parameters" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli podczas wykonywania workflow widzisz błąd <code>Bad request - please check your parameters</code> w node'zie z polską nazwą:</p>
+<p><img alt="" src="../assets/workflow__polish_characters__error_1.png" /></p>
+</li>
+<li>
+<p>W sekcji <code>Output</code> zobaczysz szczegółowy błąd informujący o nieprawidłowej nazwie funkcji, która nie pasuje do wzorca <code>^[a-zA-Z0-9_-]+$</code></p>
+<p><img alt="" src="../assets/workflow__polish_characters__error_2.png" /></p>
+</li>
+<li>
+<p>Problem występuje w node'ach z polskimi znakami w nazwie (ą, ć, ę, ł, ń, ó, ś, ź, ż), które nie są dozwolone w niektórych kontekstach API
+      <img alt="" src="../assets/workflow__polish_characters__workflow.png" /></p>
+</li>
+</ol>
+<h3 id="rozwiazanie"><strong>Rozwiązanie:</strong><a class="headerlink" href="#rozwiazanie" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Zmień nazwę node'a</strong> na angielską lub usuń polskie znaki:</p>
+<ul>
+<li>zamiast "Agent kategoryzujący faktury" użyj "Agent_kategoryzujacy_faktury" lub "Invoice_Categorizer"</li>
+<li>zamiast "rejestr_kosztów_kategoria1" użyj "rejestr_kosztow_kategoria1" lub "cost_register_category1"</li>
+</ul>
+</li>
+<li>
+<p><strong>Kliknij dwukrotnie</strong> na problematyczny node, aby otworzyć jego ustawienia</p>
+</li>
+<li>
+<p><strong>W górnej części</strong> znajdź pole z nazwą node'a i zmień ją na wersję bez polskich znaków</p>
+</li>
+<li>
+<p><strong>Zapisz zmiany</strong> i uruchom workflow ponownie</p>
+</li>
+</ol>
+<h3 id="dozwolone-znaki-w-nazwach-nodeow"><strong>Dozwolone znaki w nazwach node'ów:</strong><a class="headerlink" href="#dozwolone-znaki-w-nazwach-nodeow" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Litery angielskie: <code>a-z</code>, <code>A-Z</code></li>
+<li>Cyfry: <code>0-9</code></li>
+<li>Podkreślnik: <code>_</code></li>
+<li>Myślnik: <code>-</code></li>
+</ul>
+<h3 id="niedozwolone-znaki"><strong>Niedozwolone znaki:</strong><a class="headerlink" href="#niedozwolone-znaki" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Polskie znaki diakrytyczne: <code>ą</code>, <code>ć</code>, <code>ę</code>, <code>ł</code>, <code>ń</code>, <code>ó</code>, <code>ś</code>, <code>ź</code>, <code>ż</code></li>
+<li>Spacje (użyj podkreślnika zamiast spacji)</li>
+<li>Znaki specjalne: <code>@</code>, <code>#</code>, <code>$</code>, <code>%</code>, <code>&amp;</code>, <code>*</code>, <code>(</code>, <code>)</code>, <code>+</code>, <code>=</code>, itp.</li>
+</ul>
+<h2 id="workflow-nie-dziaa-google-docs-node-bad-bad-request-please-check-your-parameters"><strong>Workflow nie działa: Google Docs node - błąd "Bad request - please check your parameters"</strong><a class="headerlink" href="#workflow-nie-dziaa-google-docs-node-bad-bad-request-please-check-your-parameters" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli podczas wykonywania workflow widzisz błąd <code>Bad request - please check your parameters</code> w nodzie Google Docs, a ID dokumentu jest poprawnie odczytywane, lecz node dalej nie przetwarza pliku:</p>
+<p><img alt="" src="../assets/Google_Docs_file_type.png" /></p>
+</li>
+<li>
+<p>W sekcji <code>Output</code> pole <code>Error details</code> będzie puste, bez dodatkowych informacji o przyczynie błędu. Najprawdopodobniej problem jest spowodowany typem pliku. Node Google Docs wymaga plików w natywnym formacie Google Workspace. </p>
+</li>
+</ol>
+<h3 id="rozwiazanie_1"><strong>Rozwiązanie:</strong><a class="headerlink" href="#rozwiazanie_1" title="Permanent link">&para;</a></h3>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1104451712?h=8dad1a82e2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Problem filtrowania zaimportowanego pliku"></iframe></div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<h2 id="workflow-nie-dziaa-workflow-nasuchujacy-na-zmiany-w-bazie-danych-postgres-supabase-nie-odpowiada"><strong>Workflow nie działa: Workflow nasłuchujący na zmiany w bazie danych Postgres ( Supabase ) nie odpowiada</strong><a class="headerlink" href="#workflow-nie-dziaa-workflow-nasuchujacy-na-zmiany-w-bazie-danych-postgres-supabase-nie-odpowiada" title="Permanent link">&para;</a></h2>
+<h3 id="problem">Problem:<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h3>
+<p>Uruchamiam workflow zgodnie z instrukcją z lekcji. Workflow się <code>kręci</code> i nie odpowiada lub po około minucie zwraca błąd.
+<img alt="" src="../assets/postgres_trigger__not_responding__1.png" /></p>
+<h3 id="prawdopodobna-przyczyna">Prawdopodobna przyczyna:<a class="headerlink" href="#prawdopodobna-przyczyna" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Problem najprawdopodobniej wynika z wyboru typu połączenia z bazą danych.
+W lekcji poświęconej łączeniu <code>Postgres z n8n</code> zostało to wyjaśnione jak skonfigurować połączenie oparte o transakcje (<code>Transaction pooler</code>). Działanie <code>Triggerów</code> wymaga jednak połączenia opartego o sesje (<code>Session pooler</code>).
+Te 2 konfiguracje w <code>Supabase</code> różnią się jedynie <code>Portem</code> i to właśnie tę wartość należy zmienić, żeby rozwiązać problem.
+<img alt="" src="../assets/postgres_trigger__not_responding__5.png" /></li>
+</ol>
+<h3 id="rozwiazanie_2">Rozwiązanie:<a class="headerlink" href="#rozwiazanie_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Otwórz dowolny node <code>Postgres Trigger</code>
+<img alt="" src="../assets/postgres_trigger__not_responding__2.png" /></p>
+</li>
+<li>
+<p>Kliknij w <code>Ołówek</code> w polu <code>Credentials to connect with</code>, żeby edytować dane dostępu do bazy danych.
+<img alt="" src="../assets/postgres_trigger__not_responding__3.png" /></p>
+</li>
+<li>
+<p>Zjedź na dół do pola <code>Port</code> i sprawdź czy jest tam wartość <code>5432</code>. Jeśli jest inny, to należy go zmienić na <code>5432</code>. 
+<img alt="" src="../assets/postgres_trigger__not_responding__4.png" /></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
