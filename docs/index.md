@@ -10,7 +10,7 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 
 - [Problemy z Docker Desktop](./pages/02_docker_desktop.md)
 - [OpenAI - klucz API, logowanie](./pages/03_open_ai.md)
-- [Credentiale Gmail nie działają](./pages/04_credentiale_credentials_problems.md)
+- [Credentials - rozwiązania problemów i poradniki](./pages/04_credentiale_credentials_problems.md)
 - [Workflow nie działa](./pages/05_workflow_does_not_work.md)
 - [Problem z Telegramem](./pages/06_telegram_problems.md)
 - [Problem z app.imprv.ai](./pages/07_imprv_problems.md)

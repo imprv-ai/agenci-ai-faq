@@ -14,7 +14,7 @@ tags:
   - Błąd 401
 ---
 
-# **Rozwiązania problemów z credentials Google**
+# **Credentials - rozwiązywania problemów i dodatkowe poradniki**
 
 ## **Credentials Gmail / Google Drive / Google Sheets - nie wiem jak dodać Client Id i Client Secret**
 1. Zaloguj się do google cloud platform [link](https://console.cloud.google.com/).
@@ -205,3 +205,28 @@ Używając poprawnego ID pliku, Google Drive może prawidłowo zidentyfikować z
 !!! warning "Ważne"
     Upewnij się, że plik ma odpowiednie uprawnienia dostępu (jest publiczny lub udostępniony dla Twojego konta Google używanego w credentials).
 
+## **Jak eksportować i importować credentials w n8n przy użyciu wiersza poleceń n8n**
+
+Jak wyeksportować credentials w n8n do pliku i zaimportować je ponownie z pliku (np. w sytuacji kiedy chcemy przenieść credentiale na inny komputer)
+
+**Cały proces zawarty jest w tym wideo**
+
+   <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/2E9VbeiXFzQ?si=NccOGDUDemNryy-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+**Komendy użyte w poradniku**
+
+   1. Eksportowanie do pliku
+
+      [Link do dokumentacji](https://docs.n8n.io/hosting/cli-commands/#credentials)
+      ```
+      n8n export:credentials --all --output=/home/node/.n8n/credentials.json
+      ```
+
+   1. Importowanie z pliku
+
+      [Link do dokumentacji](https://docs.n8n.io/hosting/cli-commands/#credentials_1)
+      ```
+      n8n import:credentials --input=/home/node/.n8n/credentials.json
+      ```
