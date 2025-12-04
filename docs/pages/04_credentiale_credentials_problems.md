@@ -205,7 +205,7 @@ Używając poprawnego ID pliku, Google Drive może prawidłowo zidentyfikować z
 !!! warning "Ważne"
     Upewnij się, że plik ma odpowiednie uprawnienia dostępu (jest publiczny lub udostępniony dla Twojego konta Google używanego w credentials).
 
-## **Jak eksportować i importować credentials w n8n przy użyciu wiersza poleceń n8n**
+## **Jak eksportować i importować credentials w n8n przy użyciu komendy n8n**
 
 Jak wyeksportować credentials w n8n do pliku i zaimportować je ponownie z pliku (np. w sytuacji kiedy chcemy przenieść credentiale na inny komputer)
 
