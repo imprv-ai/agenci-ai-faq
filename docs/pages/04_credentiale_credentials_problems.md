@@ -14,7 +14,7 @@ tags:
   - Błąd 401
 ---
 
-# **Credentials - rozwiązywania problemów i dodatkowe poradniki**
+# **Credentials - rozwiązania problemów i dodatkowe poradniki**
 
 ## **Credentials Gmail / Google Drive / Google Sheets - nie wiem jak dodać Client Id i Client Secret**
 1. Zaloguj się do google cloud platform [link](https://console.cloud.google.com/).
