@@ -1,0 +1,1574 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które napotykają uczestnicy kursu `Agenci AI`.">
+      
+      
+        <meta name="author" content="IMPRV.ai dev team and supporters">
+      
+      
+        <link rel="canonical" href="https://imprv-ai.github.io/agenci-ai-faq/pages/04_credentiale_credentials_problems/">
+      
+      
+        <link rel="prev" href="../03_open_ai/">
+      
+      
+        <link rel="next" href="../05_workflow_does_not_work/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Credentials - rozwiązania problemów i dodatkowe poradniki - FAQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#credentials-rozwiazania-problemow-i-dodatkowe-poradniki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FAQ" class="md-header__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FAQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Credentials - rozwiązania problemów i dodatkowe poradniki
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FAQ" class="md-nav__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FAQ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/imprv-ai/agenci-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/agenci-ai-faq
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ dla kursu Agenci AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jak zacząć pracę z kursem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_open_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI - klucz API, logowanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credentials - rozwiązania problemów i dodatkowe poradniki
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credentials - rozwiązania problemów i dodatkowe poradniki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Gmail / Google Drive / Google Sheets - nie wiem jak dodać Client Id i Client Secret
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-google-nie-moge-pobrac-client-secret-z-google-cloud-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Google - nie mogę pobrać Client Secret z Google Cloud Platform
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-gmail-node-gmail-nie-dziaa-i-zwraca-bad-przy-wywoaniu-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Gmail - Node Gmail nie działa i zwraca błąd przy wywołaniu workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-google-sheet-nie-widzi-listy-dokumentow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node Google Sheet nie widzi listy dokumentów
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-google-sheet-gmail-google-drive-nie-dziaaja-po-ustawieniu-webhook_url-i-uruchomieniu-ngrok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Google Sheet / Gmail/ Google Drive nie działają po ustawieniu WEBHOOK_URL i uruchomieniu ngrok
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-oauth-callback-failed-because-of-insufficient-permissions-rozne-porty-56785679" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd: "OAuth callback failed because of insufficient permissions" — różne porty 5678/5679
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usuwanie-niepotrzebnychniedziaajacych-credentials-z-nodea-w-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuwanie niepotrzebnych/niedziałających credentials z node'a w n8n
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-autoryzacji-oauth-dostep-zablokowany-the-oauth-client-was-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd autoryzacji OAuth: "Dostęp zablokowany" / "The OAuth client was not found"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błąd autoryzacji OAuth: &#34;Dostęp zablokowany&#34; / &#34;The OAuth client was not found&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przyczyna-problemu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przyczyna problemu:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-to-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego to działa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-przy-pobieraniu-zdjecia-z-google-drive-forbidden-perhaps-check-your-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd przy pobieraniu zdjęcia z Google Drive: "Forbidden - perhaps check your credentials?"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błąd przy pobieraniu zdjęcia z Google Drive: &#34;Forbidden - perhaps check your credentials?&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przyczyna-problemu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przyczyna problemu:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-to-dziaa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego to działa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-eksportowac-i-importowac-credentials-w-n8n-przy-uzyciu-komendy-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak eksportować i importować credentials w n8n przy użyciu komendy n8n
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_workflow_does_not_work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązywanie problemów z workflowami z lekcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_telegram_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z połączeniem n8n z Telegramem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_imprv_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z działaniem aplikacji imprv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reset_password_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z loginem i hasłem do n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_ngrok_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązania problemów z ngrok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_deployment_informations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wdrażanie N8N na zdalnym serwerze – dodatkowe informacje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_charts_and_sql_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow do generowania wykresów i wyszukiwania danych - SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_update_n8n_in_docker_desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aktualizacja n8n w Docker Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_evaluation_activation_n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N8N Evaluations – aktywacja w n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_linkedin_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemy z LinkedIn OAuth Redirect URL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_mcp_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pytania i problemy związane z MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Gmail / Google Drive / Google Sheets - nie wiem jak dodać Client Id i Client Secret
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-google-nie-moge-pobrac-client-secret-z-google-cloud-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Google - nie mogę pobrać Client Secret z Google Cloud Platform
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-gmail-node-gmail-nie-dziaa-i-zwraca-bad-przy-wywoaniu-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Gmail - Node Gmail nie działa i zwraca błąd przy wywołaniu workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-google-sheet-nie-widzi-listy-dokumentow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node Google Sheet nie widzi listy dokumentów
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-google-sheet-gmail-google-drive-nie-dziaaja-po-ustawieniu-webhook_url-i-uruchomieniu-ngrok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credentials Google Sheet / Gmail/ Google Drive nie działają po ustawieniu WEBHOOK_URL i uruchomieniu ngrok
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-oauth-callback-failed-because-of-insufficient-permissions-rozne-porty-56785679" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd: "OAuth callback failed because of insufficient permissions" — różne porty 5678/5679
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usuwanie-niepotrzebnychniedziaajacych-credentials-z-nodea-w-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuwanie niepotrzebnych/niedziałających credentials z node'a w n8n
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-autoryzacji-oauth-dostep-zablokowany-the-oauth-client-was-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd autoryzacji OAuth: "Dostęp zablokowany" / "The OAuth client was not found"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błąd autoryzacji OAuth: &#34;Dostęp zablokowany&#34; / &#34;The OAuth client was not found&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przyczyna-problemu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przyczyna problemu:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-to-dziaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego to działa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-przy-pobieraniu-zdjecia-z-google-drive-forbidden-perhaps-check-your-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd przy pobieraniu zdjęcia z Google Drive: "Forbidden - perhaps check your credentials?"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błąd przy pobieraniu zdjęcia z Google Drive: &#34;Forbidden - perhaps check your credentials?&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przyczyna-problemu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Przyczyna problemu:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rozwiazanie_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozwiązanie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlaczego-to-dziaa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dlaczego to działa?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-eksportowac-i-importowac-credentials-w-n8n-przy-uzyciu-komendy-n8n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak eksportować i importować credentials w n8n przy użyciu komendy n8n
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Autoryzacja</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Błąd 401</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Client Id</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Client Secret</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Credentials</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Gmail</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Google</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Google Cloud Platform</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Incognito</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Moduł 3</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">OAuth</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">n8n</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="credentials-rozwiazania-problemow-i-dodatkowe-poradniki"><strong>Credentials - rozwiązania problemów i dodatkowe poradniki</strong><a class="headerlink" href="#credentials-rozwiazania-problemow-i-dodatkowe-poradniki" title="Permanent link">&para;</a></h1>
+<h2 id="credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret"><strong>Credentials Gmail / Google Drive / Google Sheets - nie wiem jak dodać Client Id i Client Secret</strong><a class="headerlink" href="#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Zaloguj się do google cloud platform <a href="https://console.cloud.google.com/">link</a>.</li>
+<li>Następnie podążaj za instrukcją z tego wideo
+ <br />
+<div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/k5FOdX_LaDo?si=mJTctvD5Cx_7drrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</li>
+</ol>
+<h2 id="credentials-google-nie-moge-pobrac-client-secret-z-google-cloud-platform"><strong>Credentials Google - nie mogę pobrać Client Secret z Google Cloud Platform</strong><a class="headerlink" href="#credentials-google-nie-moge-pobrac-client-secret-z-google-cloud-platform" title="Permanent link">&para;</a></h2>
+<p>Kiedy otwieram credentials w Google Cloud Platform to nie mogę skopiować Client Secret ponieważ jest zaszyfrowany ( oznaczony gwiazdkami )
+   <img alt="" src="../assets/google_cloud__credentials__secrets_0.png" />
+<strong>Dlaczego tak się dzieje?</strong>
+Google Cloud Platform zmieniło politykę przechowywania danych i teraz użytkownik jest odpowiedzialny za bezpieczne przechowywanie swojego sekretu ( <code>Client Secret</code> ). Przez tę zmianę Google pozwala pobrać <code>Client Secret</code> jedynie w momencie tworzenia credentials.</p>
+<p><strong>Co należy zrobić?</strong></p>
+<ol>
+<li>
+<p>Otwórz <strong>nowe</strong> credentials w Google Cloud Platform. Wybieramy <code>Create credentials</code>
+   <img alt="" src="../assets/google_cloud__credentials__secrets_1.png" />
+   A następnie z listy wybieramy <code>OAuth client ID</code>
+   <img alt="" src="../assets/google_cloud__credentials__secrets_2.png" /></p>
+</li>
+<li>
+<p>W kolejnym kroku wybieramy <code>Web application</code>, ustalamy nazwę naszych Credentials, ustawiamy <code>Authorized redirect URIs</code> na <code>http://localhost:5678/rest/oauth2-credential/callback</code>
+   <img alt="" src="../assets/google_cloud__credentials__secrets_3.png" /></p>
+</li>
+<li>
+<p>A następnie klikamy na <code>Create</code>
+   <img alt="" src="../assets/google_cloud__credentials__secrets_4.png" /></p>
+</li>
+<li>
+<p>W kolejnym kroku pojawią się nasze dane dostępowe ( czyli <code>Client ID</code> i <code>Client Secret</code> ). Należy je skopiować i zapisać w bezpiecznym miejscu.
+   Można również je pobrać jako plik klikając na <code>Download JSON</code>. Wartości <code>Client ID</code> i <code>Client Secret</code> warto wpisać od razu do credentials w n8n.
+   <img alt="" src="../assets/google_cloud__credentials__secrets_5.png" />
+   <strong>Proces ustawiania credentials w n8n został opisany w tym samouczku</strong>
+   <a href="../04_credentiale_credentials_problems/#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret">Kliknij, żeby przejść do instrukcji</a></p>
+</li>
+</ol>
+<h2 id="credentials-gmail-node-gmail-nie-dziaa-i-zwraca-bad-przy-wywoaniu-workflow"><strong>Credentials Gmail - Node Gmail nie działa i zwraca błąd przy wywołaniu workflow</strong><a class="headerlink" href="#credentials-gmail-node-gmail-nie-dziaa-i-zwraca-bad-przy-wywoaniu-workflow" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Jeśli widzisz taki błąd
+   <img alt="" src="../assets/credentials__gmail__error_not_enabled_1.png" />
+   <img alt="" src="../assets/credentials__gmail__error_not_enabled_2.png" /></p>
+</li>
+<li>
+<p>Zaloguj się do google cloud platform <a href="https://console.cloud.google.com/">link</a>.</p>
+</li>
+<li>Następnie podążaj za instrukcją z tego wideo
+    <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/DT8ynTz9xuI?si=V1z3qWngLAfqNvYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></li>
+</ol>
+<h2 id="node-google-sheet-nie-widzi-listy-dokumentow"><strong>Node Google Sheet nie widzi listy dokumentów</strong><a class="headerlink" href="#node-google-sheet-nie-widzi-listy-dokumentow" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Jeśli rozwijasz w polu <strong>Document</strong> listę <strong>From List</strong> i widzisz taki błąd
+   <img alt="" src="../assets/credentials__google__does_not_see_list_1.png" />
+   <strong>Oznacza to, że należy włączyć serwis Google Drive API</strong> </li>
+<li>Zaloguj się do google cloud platform <a href="https://console.cloud.google.com/">link</a>.</li>
+<li>Następnie podążaj za instrukcją z tego wideo
+    <div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/O7QV6X8H1uk?si=QUOOzcxJxuKSwuky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></li>
+</ol>
+<h2 id="credentials-google-sheet-gmail-google-drive-nie-dziaaja-po-ustawieniu-webhook_url-i-uruchomieniu-ngrok"><strong>Credentials Google Sheet / Gmail/ Google Drive nie działają po ustawieniu <code>WEBHOOK_URL</code> i uruchomieniu <code>ngrok</code></strong><a class="headerlink" href="#credentials-google-sheet-gmail-google-drive-nie-dziaaja-po-ustawieniu-webhook_url-i-uruchomieniu-ngrok" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Otwórz któryś z istniejących Credentials jakiegokolwiek serwisu Google ( np, Gmail ) i skopiuj zawartość pola <code>OAuth Redirect URL</code>
+   <img alt="" src="../assets/problems__google_credentials__ngrok_0.png" />
+   <img alt="" src="../assets/problems__google_credentials__ngrok_1.png" /></p>
+</li>
+<li>
+<p>Otwórz swój projekt w <a href="https://console.cloud.google.com/">Google Cloud Platform</a></p>
+</li>
+<li>
+<p>Dodaj adres skopiowany z <code>OAuth Redirect URL</code> do <code>Authorized Redirect URIs</code> w Google Cloud
+   <img alt="" src="../assets/problems__google_credentials__ngrok_2.png" /></p>
+</li>
+</ol>
+<p><em>Jeśli potrzebujesz przypomnienia jak się poruszać po Google Cloud zerknij na
+   <a href="./#credentials-gmail-google-drive-google-sheets-nie-wiem-jak-dodac-client-id-i-client-secret">tę instrukcję</a></em></p>
+<h2 id="bad-oauth-callback-failed-because-of-insufficient-permissions-rozne-porty-56785679"><strong>Błąd: "OAuth callback failed because of insufficient permissions" — różne porty 5678/5679</strong><a class="headerlink" href="#bad-oauth-callback-failed-because-of-insufficient-permissions-rozne-porty-56785679" title="Permanent link">&para;</a></h2>
+<p>Jeśli przy łączeniu credentials Google widzisz komunikat o błędzie w oknie callbacku i Twoje n8n działa pod <code>http://localhost:5679</code>, a w Google Cloud w <code>Authorized redirect URIs</code> masz <code>http://localhost:5678/rest/oauth2-credential/callback</code>, to problemem jest niedopasowanie portów. Port w Google Cloud musi być taki sam jak port, na którym działa n8n.</p>
+<p><img alt="" src="../assets/credentials__insufficient_permissions.png" /></p>
+<p><strong>Rozwiązanie - uruchom n8n na standardowym porcie 5678</strong></p>
+<ol>
+<li>
+<p>Zatrzymaj i usuń kontener n8n działający na porcie 5679
+         <img alt="" src="../assets/n8n__stop_and_delete_container.png" /></p>
+</li>
+<li>
+<p>Przejdź do sekcji <code>Images</code> i wybierz obraz <code>n8nio/n8n</code>
+         <img alt="" src="../assets/n8n__run_image.png" /></p>
+</li>
+<li>
+<p>Uruchom ponownie kontener n8n mapując port <code>5678:5678</code> (tak aby aplikacja była dostępna pod <code>http://localhost:5678</code>).<br />
+<img alt="" src="../assets/n8n__host_port.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Uwaga</p>
+<p>Nie zapomnij wypełnić reszty pól! 
+W przeciwnym razie n8n nie będzie działał.</p>
+</div>
+</li>
+<li>
+<p>Upewnij się, że w Google Cloud <code>Authorized redirect URIs</code> zawiera <code>http://localhost:5678/rest/oauth2-credential/callback</code>.
+         <img alt="" src="../assets/credentials__redirect_uris.png" /></p>
+</li>
+<li>
+<p>Wróć do n8n i ponów <code>Sign in with Google</code>.</p>
+</li>
+</ol>
+<h2 id="usuwanie-niepotrzebnychniedziaajacych-credentials-z-nodea-w-n8n"><strong>Usuwanie niepotrzebnych/niedziałających credentials z node'a w n8n</strong><a class="headerlink" href="#usuwanie-niepotrzebnychniedziaajacych-credentials-z-nodea-w-n8n" title="Permanent link">&para;</a></h2>
+<p>Jeśli masz niepotrzebne lub niedziałające credentials skonfigurowane w swoim node'ie w n8n, możesz je łatwo usunąć wykonując poniższe kroki:</p>
+<div class="admonition warning">
+<p class="admonition-title">Uwaga</p>
+<p>Usunięcie credentials może spowodować, że inne workflow wykorzystujące te same credentials przestaną działać. Upewnij się, że nie są używane w innych miejscach przed ich usunięciem.</p>
+</div>
+<ol>
+<li>
+<p><strong>Otwórz ustawienia node'a z credentials</strong> - kliknij na ikonę edycji (ołówek) w prawym górnym rogu node'a, dla którego chcesz usunąć credentials.
+   <img alt="" src="../assets/credentials__remove__edit_icon.png" /></p>
+</li>
+<li>
+<p><strong>Przejdź do ustawień credentials</strong> - w oknie ustawień node'a przejdź do sekcji credentials i kliknij na ikonę kosza (usuwania) w prawym górnym rogu okna credentials.
+   <img alt="" src="../assets/credentials__remove__delete_icon.png" /></p>
+</li>
+<li>
+<p><strong>Potwierdź usunięcie</strong> - pojawi się okno dialogowe z pytaniem czy na pewno chcesz usunąć credentials. Kliknij przycisk <strong>"Yes, delete"</strong> aby potwierdzić usunięcie.
+   <img alt="" src="../assets/credentials__remove__confirm_delete.png" /></p>
+</li>
+</ol>
+<h2 id="bad-autoryzacji-oauth-dostep-zablokowany-the-oauth-client-was-not-found"><strong>Błąd autoryzacji OAuth: "Dostęp zablokowany" / "The OAuth client was not found"</strong><a class="headerlink" href="#bad-autoryzacji-oauth-dostep-zablokowany-the-oauth-client-was-not-found" title="Permanent link">&para;</a></h2>
+<p>Jeśli podczas próby autoryzacji z Google (Gmail, Google Drive, Google Sheets) widzisz komunikat o błędzie autoryzacji podobny do poniższego:</p>
+<p><img alt="" src="../assets/problems__google_oauth__access_blocked.png" /></p>
+<h3 id="przyczyna-problemu">Przyczyna problemu:<a class="headerlink" href="#przyczyna-problemu" title="Permanent link">&para;</a></h3>
+<p>Problem najczęściej występuje gdy przeglądarka <strong>automatycznie loguje się</strong> na inne konto Google niż to, dla którego zostały skonfigurowane credentials w Google Cloud Platform. Może to się zdarzyć, gdy:</p>
+<ol>
+<li>Masz zalogowanych wiele kont Google w tej samej przeglądarce</li>
+<li>Przeglądarka automatycznie wybiera konto, które nie ma dostępu do skonfigurowanej aplikacji OAuth</li>
+<li>Credentials zostały utworzone dla jednego konta, a próbujesz autoryzować się z poziomu innego</li>
+</ol>
+<h3 id="rozwiazanie">Rozwiązanie:<a class="headerlink" href="#rozwiazanie" title="Permanent link">&para;</a></h3>
+<p><strong>Użyj trybu incognito (prywatnego) w przeglądarce:</strong></p>
+<ol>
+<li>
+<p><strong>Skopiuj adres URL workflow</strong> - skopiuj pełny adres workflow z paska adresu przeglądarki (np. <code>localhost:5678/workflow/C8y5bItiJVEBsXTABpH55433/48dc12</code>)
+   <img alt="" src="../assets/problems__google_oauth__copy_workflow_url.png" /></p>
+</li>
+<li>
+<p><strong>Otwórz okno incognito</strong> - otwórz nowe okno przeglądarki w trybie incognito/prywatnym:</p>
+<ul>
+<li><strong>Chrome</strong>: Ctrl+Shift+N (Windows) lub Cmd+Shift+N (Mac)
+   <img alt="" src="../assets/problems__google_oauth__incognito_window.png" /></li>
+<li><strong>Firefox</strong>: Ctrl+Shift+P (Windows) lub Cmd+Shift+P (Mac)</li>
+<li><strong>Edge</strong>: Ctrl+Shift+N (Windows)</li>
+</ul>
+</li>
+<li>
+<p><strong>Wklej adres workflow</strong> - wklej skopiowany adres URL do paska adresu w nowym oknie incognito</p>
+</li>
+<li>
+<p><strong>Ponów autoryzację</strong> - przejdź do swojego node'a (np. Gmail) i spróbuj ponownie wykonać autoryzację OAuth</p>
+</li>
+</ol>
+<h3 id="dlaczego-to-dziaa">Dlaczego to działa?<a class="headerlink" href="#dlaczego-to-dziaa" title="Permanent link">&para;</a></h3>
+<p>Tryb incognito zapewnia "czystą sesję" bez wcześniej zapamiętanych danych logowania, co pozwala:</p>
+<ul>
+<li>Ręcznie wybrać właściwe konto Google</li>
+<li>Uniknąć automatycznego logowania na nieprawidłowe konto  </li>
+<li>Przeprowadzić autoryzację z poziomu konta, które ma dostęp do aplikacji OAuth</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wskazówka</p>
+<p>Po pomyślnej autoryzacji w trybie incognito, możesz wrócić do zwykłego okna przeglądarki. Autoryzacja zostanie zapamiętana w n8n.</p>
+</div>
+<h2 id="bad-przy-pobieraniu-zdjecia-z-google-drive-forbidden-perhaps-check-your-credentials"><strong>Błąd przy pobieraniu zdjęcia z Google Drive: "Forbidden - perhaps check your credentials?"</strong><a class="headerlink" href="#bad-przy-pobieraniu-zdjecia-z-google-drive-forbidden-perhaps-check-your-credentials" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/problems__google_drive__error_403.png" /></p>
+<h3 id="przyczyna-problemu_1">Przyczyna problemu:<a class="headerlink" href="#przyczyna-problemu_1" title="Permanent link">&para;</a></h3>
+<p>Najczęstszą przyczyną tego błędu jest używanie <strong>ID folderu</strong> zamiast <strong>ID konkretnego pliku</strong> ze zdjęciem. Gdy kopiujesz link do zdjęcia bezpośrednio z Google Drive, często otrzymujesz link zawierający ID folderu, w którym znajduje się zdjęcie, a nie ID samego pliku.</p>
+<h3 id="rozwiazanie_1">Rozwiązanie:<a class="headerlink" href="#rozwiazanie_1" title="Permanent link">&para;</a></h3>
+<p><strong>Pobierz poprawne ID zdjęcia bezpośrednio z pliku:</strong></p>
+<ol>
+<li>
+<p><strong>Otwórz plik zdjęcia w Google Drive</strong> - znajdź swoje zdjęcie, a następnie:</p>
+<ul>
+<li>kliknij na trzy kropki</li>
+<li>wybierz opcję <strong>"Share"</strong></li>
+<li>wybierz opcję <strong>"Copy link"</strong> (Kopiuj link)
+   <img alt="" src="../assets/problems__google_drive__open_image.png" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Wyciągnij ID pliku z linku</strong> - skopiowany link będzie miał format podobny do:
+    <div class="highlight"><pre><span></span><code>https://drive.google.com/file/d/12Vidu___________YxNGvBGd/view?usp=drive_link
+</code></pre></div>
+    <img alt="" src="../assets/problems__google_drive__copy_link.png" /></p>
+<p>ID pliku to część między <code>/d/</code> a <code>/view</code> - w tym przypadku: <code>12Vjdu___________YxNGyBGdJ</code></p>
+</li>
+<li>
+<p><strong>Użyj poprawnego ID w n8n</strong> - wklej wyciągnięte ID do odpowiedniego pola w node'ie Google Drive</p>
+</li>
+</ol>
+<h3 id="dlaczego-to-dziaa_1">Dlaczego to działa?<a class="headerlink" href="#dlaczego-to-dziaa_1" title="Permanent link">&para;</a></h3>
+<p>Google Drive wyróżnia różne typy obiektów (foldery, pliki, dokumenty), każdy z unikalnym ID.
+Używając poprawnego ID pliku, Google Drive może prawidłowo zidentyfikować zasób i udostępnić go zgodnie z ustawionymi uprawnieniami.</p>
+<div class="admonition warning">
+<p class="admonition-title">Ważne</p>
+<p>Upewnij się, że plik ma odpowiednie uprawnienia dostępu (jest publiczny lub udostępniony dla Twojego konta Google używanego w credentials).</p>
+</div>
+<h2 id="jak-eksportowac-i-importowac-credentials-w-n8n-przy-uzyciu-komendy-n8n"><strong>Jak eksportować i importować credentials w n8n przy użyciu komendy n8n</strong><a class="headerlink" href="#jak-eksportowac-i-importowac-credentials-w-n8n-przy-uzyciu-komendy-n8n" title="Permanent link">&para;</a></h2>
+<p>Jak wyeksportować credentials w n8n do pliku i zaimportować je ponownie z pliku (np. w sytuacji kiedy chcemy przenieść credentiale na inny komputer)</p>
+<p><strong>Cały proces zawarty jest w tym wideo</strong></p>
+<div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/2E9VbeiXFzQ?si=NccOGDUDemNryy-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+<p><strong>Komendy użyte w poradniku</strong></p>
+<ol>
+<li>
+<p>Eksportowanie do pliku</p>
+<p><a href="https://docs.n8n.io/hosting/cli-commands/#credentials">Link do dokumentacji</a>
+  <div class="highlight"><pre><span></span><code>n8n export:credentials --all --output=/home/node/.n8n/credentials.json
+</code></pre></div></p>
+</li>
+<li>
+<p>Importowanie z pliku</p>
+<p><a href="https://docs.n8n.io/hosting/cli-commands/#credentials_1">Link do dokumentacji</a>
+  <div class="highlight"><pre><span></span><code>n8n import:credentials --input=/home/node/.n8n/credentials.json
+</code></pre></div></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
