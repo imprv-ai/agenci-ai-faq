@@ -18,13 +18,15 @@ tags:
 Zanim zainstalujesz Docker Desktop, upewnij się, że wymagane funkcje Windows są włączone:
 
 1. Otwórz okno funkcji Windows: w menu Start wpisz `Włącz lub wyłącz funkcje systemu Windows` (po angielsku: `Enable or disable Windows features`).
-2. Sprawdź, czy zaznaczone są następujące pozycje:
+1. Sprawdź, czy zaznaczone są następujące pozycje:
     - Hyper-V
     - Virtual Machine Platform
     - Windows Hypervisor Platform
     - Windows Subsystem for Linux
+
     ![](./assets/windows_features__hyperv_wsl.png)
-3. Zatwierdź zmiany i — jeśli system o to poprosi — zrestartuj komputer.
+
+1. Zatwierdź zmiany i — jeśli system o to poprosi — zrestartuj komputer.
 
 Jeśli po zastosowaniu tych kroków nadal pojawiają się błędy związane z wirtualizacją, przejdź do konfiguracji w BIOS i włącz `Intel Virtualization Technology (VMX)` – szczegóły poniżej w sekcji [Ustawienie w BIOS Intel Virtualization Technology (VMX)](#bios-vmx).
 
