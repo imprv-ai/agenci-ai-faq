@@ -168,5 +168,35 @@ Aby całkowicie wyłączyć Docker Desktop:
 1. Kliknij w zakładkę `Env` żeby zobaczyć ustawienia `zmiennych środowiskowych`
     ![](assets/workflow__docker_desktop__inspect_4.png)
 
-## Każdy problem
+## Aktualizacja zmiennych środowiskowych podczas stawiania kontenera n8n
+
+**Zagadnienie**: Chcę dodać lub zmienić zmienne środowiskowe podczas uruchamiania kontenera n8n ze względu na zmiany w n8n w wersjach powyżej `2.0.0`.
+
+**Rozwiązanie**: 
+
+1. Zatrzymaj i usuń istniejący kontener n8n w Docker Desktop (zmienne środowiskowe są ustawiane tylko przy tworzeniu kontenera).
+1. Jeśli masz starszą wersję n8n, to pobierz najnowszą wersję n8n (wg. instrukcji nagranej tutaj [Aktualizacja n8n w Docker Desktop](./12_update_n8n_in_docker_desktop.md)).
+1. Uruchom nowy kontener n8n i w kroku konfiguracji dodaj poniższe zmienne. 
+1. Zapisz ustawienia i uruchom kontener.
+
+Zestaw zmiennych:
+
+```
+GENERIC_TIMEZONE=Europe/Warsaw
+TZ=Europe/Warsaw
+WEBHOOK_URL=https://twoj-adres.ngrok-free.app
+N8N_DIAGNOSTICS_ENABLED=false
+NODES_EXCLUDE=[]
+N8N_RESTRICT_FILE_ACCESS_TO="/pliki_n8n"
+```
+
+Wyjaśnienia:
+
+- `GENERIC_TIMEZONE` i `TZ` ustawiają strefę czasową dla n8n i procesów w kontenerze - dzięki temu n8n będzie działał w odpowiednim czasie.
+- `WEBHOOK_URL` to publiczny adres bazowy n8n używany do generowania webhooków i redirectów (musi zawierać protokół, np. `https://`). Ustaw tę wartość, gdy n8n działa pod publicznym adresem `ngrok` - dzięki temu będziemy mieli możliwość połączenia n8n z aplikacją na zewnątrz np. z Telegramem, LinkedIn, etc.
+- `N8N_DIAGNOSTICS_ENABLED` włącza lub wyłącza wysyłanie anonimowych danych diagnostycznych; `false` wyłącza telemetrię - nie będzie wysyłanych anonimowych danych diagnostycznych do n8n.
+- `NODES_EXCLUDE` to lista nazw node'ów do ukrycia/wyłączenia; pusta lista (`[]`) oznacza brak wykluczeń - wszystkie node'y będą widoczne.
+- `N8N_RESTRICT_FILE_ACCESS_TO` ogranicza dostęp n8n do plików tylko do wskazanego katalogu, np. `/pliki_n8n` - n8n nie będzie miał dostępu do innych plików na dysku.
+
+## Każdy problem związany z Docker Desktop
 Napotkając jakikolwiek problem podczas instalacji lub działania Docker Desktop warto przedstawić swój problem dla chata AI (Chat GPT, Claude, Grok). Warto wtedy dodać, że nie jest się informatykiem i żeby odpowiedział prostym językiem, z opisaniem wszystkich potrzebnych kroków.
