@@ -188,7 +188,7 @@ GENERIC_TIMEZONE=Europe/Warsaw
 TZ=Europe/Warsaw
 WEBHOOK_URL=https://twoj-adres.ngrok-free.app
 N8N_DIAGNOSTICS_ENABLED=false
-NODES_EXCLUDE=[]
+NODES_EXCLUDE="[]"
 N8N_RESTRICT_FILE_ACCESS_TO="/pliki_n8n"
 ```
 
